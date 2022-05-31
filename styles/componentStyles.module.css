@@ -1,0 +1,170 @@
+.professionalServicesCard {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  border-radius: 25px;
+  height: 380px;
+  z-index: -1;
+}
+
+.cardHeading {
+  text-align: center;
+  color: #fa2545;
+  font-size: 18px;
+}
+
+.cardParagraph {
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 18px;
+}
+.frequentlyAskedCard {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.frequentlyAskedParagraph {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.frequentlyAskedRow {
+  padding: 30px 20px 0px 20px;
+}
+.takeHelpParagraph {
+  font-family: Arial;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #666666;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.takeHelpHeading {
+  font-size: 34px;
+  color: #370c64;
+  margin-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+}
+.bestCDRParagraph {
+  font-family: Arial;
+  font-size: 22px;
+  margin-top: 10px;
+  color: #666666;
+}
+.workProgressHeading {
+  font-size: 35px;
+  color: #370c64;
+  text-align: center;
+  font-family: Cambria;
+  font-weight: 700;
+}
+.stepsHeading {
+  color: #fa2545;
+  font-weight: 700;
+  margin-top: 100px;
+}
+.stepsSubHeading {
+  color: #000000;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.stepsParagraph {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+  color: #666666;
+}
+@media screen and (max-width: 540px) {
+  .takeHelpParagraph {
+    font-size: 15px;
+  }
+
+  .takeHelpHeading {
+    font-size: 17px;
+  }
+  .bestCDRParagraph {
+    font-size: 12px;
+  }
+  .workProgressHeading {
+    font-size: 20px;
+  }
+  .stepsHeading {
+    font-size: 15px;
+  }
+  .stepsSubHeading {
+    font-size: 15px;
+  }
+  .stepsHeading {
+    margin-top: 0;
+  }
+  .stepsSubHeading {
+    margin-top: 10px;
+  }
+  .stepsParagraph {
+    font-size: 12px;
+  }
+  .getStartedLink > strong {
+    font-size: 12px;
+  }
+  .getStartedLink {
+    margin-top: 0 !important;
+  }
+  .professionalParagraph {
+    font-size: 12px !important;
+  }
+  .professionalServicesCard {
+    height: 250px;
+    padding: 3px 15px;
+  }
+  .professionalMobileImage {
+    height: 60% !important;
+    width: 30% !important;
+    border-radius: 4px !important;
+  }
+  .professionalMobileImage > img {
+    height: 70% !important;
+    width: 70% !important;
+  }
+  .cardHeading {
+    font-size: 12px;
+  }
+  .cardParagraph {
+    font-size: 12px;
+  }
+  .frequentlyAskedParagraph {
+    font-size: 12px !important;
+  }
+  .thousandsParagraph {
+    font-size: 14px !important;
+  }
+  .whatClientSayComponent {
+    height: 55vh !important;
+  }
+  .whatClientSayCard {
+    width: 70% !important;
+  }
+  .whatClientSayImage {
+    height: 100px !important;
+    width: 100px !important;
+    margin-top: -50px !important;
+  }
+  .whatClientSayLeftButton {
+    left: 3% !important;
+  }
+  .whatClientSayRightButton {
+    right: 3% !important;
+  }
+  .whatClientSaySaying {
+    font-size: 12px !important;
+  }
+  .whatClientSayName {
+    margin-top: 45px !important;
+  }
+  .onTimeDelivery{
+    margin-left: 0 !important;
+    width:100% !important;
+    height:fit-content !important
+  }
+}

@@ -1,0 +1,9 @@
+.documentsForStageList {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 540px) {
+  .documentsForStageList {
+    font-size: 10px !important;
+  }
+}

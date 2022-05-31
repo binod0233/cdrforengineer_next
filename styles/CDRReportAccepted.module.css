@@ -1,0 +1,38 @@
+.acceptedBackgrounded {
+  background: linear-gradient(
+    90deg,
+    #60269e 0%,
+    #4c1980 35.73%,
+    #360b62 100%
+  ) !important;
+}
+
+.CDRReportAcceptedHeading {
+  font-size: 34px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.CDRReportAcceptParagraph {
+  font-family: Century Gothic;
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  .CDRReportAcceptedHeading {
+    font-size: 18px;
+  }
+  .CDRReportAcceptParagraph {
+    font-size: 12px;
+  }
+  .CDRReportAcceptParagraph > Button {
+    font-size: 10px;
+  }
+  .CDRReportAcceptButton {
+    font-size: 12px !important;
+  }
+}

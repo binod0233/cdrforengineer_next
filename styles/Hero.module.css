@@ -1,0 +1,48 @@
+.heroScreen {
+  background: linear-gradient(
+    90deg,
+    #60269e 0%,
+    #4c1980 35.73%,
+    #360b62 100%
+  ) !important;
+  min-height: 40rem;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.formSubmitButton {
+  background-color: #fa2545;
+  width: fit-content;
+  margin: 0 0 10px 0;
+}
+.formContainer {
+  border-radius: 20px;
+}
+.inputField {
+  border: none; 
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 540px) {
+  .formSubmitButton {
+    margin: 0;
+  }
+  .formContainer {
+    margin-bottom: 10px;
+  }
+  .formContainerDiv{
+    width:90% !important;
+  }
+}
+
+.PhoneInputCountry {
+  padding: 2px;
+}
+.PhoneInputInput {
+  height: 35px !important;
+  border: none;
+  outline: none;
+  background-color: #f4f4f4 !important;
+  padding-left: 5px;
+  border-radius: 5px;
+}

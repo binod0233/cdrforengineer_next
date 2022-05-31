@@ -1,0 +1,68 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.allFooter{
+  background-image: url('footerBackground.png');
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 100px;
+}
+.upperFooter {
+  /* background-color: #5e259b; */
+  padding: 40px;
+  color: white;
+}
+.footerServices {
+  text-decoration: none;
+  color: white;
+}
+.footerServices:hover {
+  color: white;
+}
+.lowerFooter {
+  /* background-color: #370c64; */
+  font-family: Century Gothic;
+  padding: 20px 0 10px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media screen and (max-width: 540px) {
+  .allFooter{
+    padding-top: 0;
+  }
+  .footerServices {
+    font-size: 10px;
+  }
+  .footerAboutUs {
+    font-size: 10px;
+  }
+  .lowerFooter {
+    font-size: 10px;
+  }
+  .footerTitle {
+    font-size: 10px;
+  }
+  .upperFooter {
+    font-size: 10px;
+  }
+  .footerImage{
+    height:70px !important;
+    margin-left: -10px !important;
+  }
+  .footerServicesTitle{
+    margin-top: 40px !important;
+  }
+}

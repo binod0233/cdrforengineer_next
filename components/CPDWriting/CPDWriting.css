@@ -1,0 +1,12 @@
+.cpdWritingCard {
+  border-radius: 15px;
+  height: 210px;
+  z-index: -1;
+}
+.CPDCard:hover {
+  color: white !important;
+  background-color: #fa2545 !important;
+}
+.CPDCard:hover .CPDCardHeading {
+  color: white !important;
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 540px) {
+  .documentsForStageList {
+    font-size: 10px !important;
+  }
+  .thingsToConsiderTitle {
+    font-size: 12px !important;
+  }
+}

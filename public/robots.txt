@@ -1,0 +1,4 @@
+sitemap: https://cdrforengineer.com/sitemap.xml
+User-Agent: *
+Allow: /
+
