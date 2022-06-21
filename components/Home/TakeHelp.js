@@ -27,7 +27,7 @@ const TakeHelp = () => {
             color: "white",
             border: "none",
           }}
-          onClick={()=>$crisp.push(['do', 'chat:open'])}
+          onClick={() => Chatra("openChat", true)}
 
         >
           Talk to our Experts

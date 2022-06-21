@@ -127,6 +127,9 @@
     .CDRReportAcceptButton {
       font-size: 12px !important;
     }
+    .frequentlyAskedRow {
+      padding: 30px 20px 0px 20px;
+    }
   }
   
   .professionalServicesCard {
@@ -159,9 +162,7 @@
     font-size: 18px;
   }
   
-  .frequentlyAskedRow {
-    padding: 30px 20px 0px 20px;
-  }
+ 
   .takeHelpParagraph {
     font-family: Arial;
     font-size: 20px;
@@ -770,6 +771,21 @@
   background-color: none;
   border-radius: 10px 10px 10px 0px;
 }
+.orderNowButton:hover{
+  transform: scale(1.01);
+}
+.pricingViewFeaturesButton:active{
+outline:none !important;
+border:none !important;
+}
+.pricingViewFeaturesButton.active{
+  outline:none !important;
+  border:none !important;
+  }
+  .pricingViewFeaturesButton{
+  outline:none !important;
+  border:none !important;
+  }
 .featuresTitle1 {
   clip-path: polygon(0 0, 100% 0, 100% 87%, 58% 87%, 53% 95%, 47% 87%, 0 87%);
   border: 1px solid #ffad05;
@@ -1127,9 +1143,7 @@ input::-webkit-input-placeholder {
   background: #FA2545 !important;
 }
 
-.viewSampleContainer:hover .viewSampleLink{
-  color:white !important
-}
+
 .sampleCodeContainer:hover{
   background: #0EAF00 !important;
   color:white !important

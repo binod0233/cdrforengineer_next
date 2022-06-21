@@ -3,17 +3,18 @@ import React, { useState } from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import PhoneInput from "react-phone-number-input";
 import PurpleHeading from "../PurpleHeading";
+import TextParagraph from "../TextParagraph";
 
 const OurFeatures = () => {
   const features = [
-    { image: "", details: "Delivery Before Deadline" },
-    { image: "", details: "Affordable Price" },
-    { image: "", details: "Domain Specific Writers" },
-    { image: "", details: "CDR and RPL Professional" },
-    { image: "", details: "24/7 Service" },
-    { image: "", details: "100 % Approval" },
-    { image: "", details: "Experienced Engineers" },
-    { image: "", details: "Plagiarism free Report" },
+    { image: "/images/SpecificSample/1.png", details: "Delivery Before Deadline" },
+    { image: "/images/SpecificSample/6.png", details: "Affordable Price" },
+    { image: "/images/SpecificSample/2.png", details: "Domain Specific Writers" },
+    { image: "/images/SpecificSample/8.png", details: "CDR and RPL Professional" },
+    { image: "/images/SpecificSample/7.png", details: "24/7 Service" },
+    { image: "/images/SpecificSample/9.png", details: "100 % Approval" },
+    { image: "/images/SpecificSample/5.png", details: "Experienced Engineers" },
+    { image: "/images/SpecificSample/4.png", details: "Plagiarism free Report" },
   ];
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,12 +27,43 @@ const OurFeatures = () => {
   };
   return (
     <Container>
-      <Row className="p-5">
-        <Col md={5} className="p-md-4 ">
+      <Row className="py-5">
+      
+        <Col md={8} className="">
+          <PurpleHeading title="Our Features" />
+<TextParagraph content="Our primary goal is to see our client's successful approval with a well-formed 
+report following proper guidelines created for the migrants. Here are some of 
+the features that we have:"/>
+          <Row className="p-md-3">
+            {features.map((f, index) => (
+              <Col
+                md={3}
+                key={index}
+                className=" pt-1 d-flex flex-column"
+              >
+                <div className='d-flex justify-content-center align-items-center'>
+                <img src={f.image} alt={f.details} style={{height:'100px',width:'100px'}} className='img-fluid'/>
+
+                </div>
+                <p
+                  style={{
+                    fontFamily: "Century Gothic",
+                    fontSize: "19px",
+                    fontWeight: "700",
+                    textAlign: "center",
+                  }}
+                >
+                  {f.details}
+                </p>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+        <Col md={4} className="py-md-4 ">
           <div className="ourFeaturesCard">
             <Form
               onSubmit={submitFormhandler}
-              className="bg-white p-4 formContainer"
+              className="bg-white p-4 mt-md-4 formContainer"
             >
               <div className="d-flex flex-column justify-content-center align-items-center my-4">
                 <h2>Download CDR Sample</h2>
@@ -93,29 +125,6 @@ const OurFeatures = () => {
               </Button>
             </Form>
           </div>
-        </Col>
-        <Col md={7} className="pt-5">
-          <PurpleHeading title="Our Features" />
-          <Row className="p-md-3">
-            {features.map((f, index) => (
-              <Col
-                md={6}
-                key={index}
-                className="ps-5 pt-3 d-flex ourFeaturesList"
-              >
-                <p
-                  style={{
-                    fontFamily: "Century Gothic",
-                    fontSize: "19px",
-                    fontWeight: "700",
-                    textAlign: "center",
-                  }}
-                >
-                  {f.details}
-                </p>
-              </Col>
-            ))}
-          </Row>
         </Col>
       </Row>
     </Container>

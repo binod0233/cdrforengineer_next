@@ -1,86 +1,88 @@
 import React from "react";
 import Head from "next/head"
-import {useRouter} from 'next/router'
-import AustraliaGuarantees from "../../components/CDRWriting/AustraliaGuarantees";
-import CDRAssessmentsComponent from "../../components/CDRWriting/CDRAssessmentsComponent";
-import MoreServices from "../../components/CDRWriting/MoreServices";
-import ServicesForEngineers from "../../components/CDRWriting/ServicesForEngineers";
+import {useRouter} from "next/router"
 import Steps from "../../components/CDRWriting/Steps";
-import StepsBeforeHiring from "../../components/CDRWriting/StepsBeforeHiring";
+import ContinuingServices from "../../components/CPDWriting/ContinuingServices";
+import DifferentTypes from "../../components/CPDWriting/DifferentTypes";
+import ElementsOfCPD from "../../components/CPDWriting/ElementsOfCPD";
+import FeaturesOfCPD from "../../components/CPDWriting/FeaturesOfCPD";
+import ImportanceOfCPD from "../../components/CPDWriting/ImportanceOfCPD";
+import MostOfYourCPD from "../../components/CPDWriting/MostOfYourCPD";
 import CDRReportAccepted from "../../components/Home/CDRReportAccepted";
 import Hero from "../../components/Hero";
 
 
-const CDRWriting = () => {
+const CPDWriting = () => {
   const router = useRouter()
   const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
-
   return (
-    <>
-      <Head>
+    <div>
+     <Head>
         <title>High-Quality CDR Report Writing Service for Engineers Australia</title>
         <meta name='description' content="Engineering Applicants seeking the best service provider for CDR Writing? Grab your high-quality CDR Report to get 100 % Approval from Engineers Australia."/>
         <link rel="canonical" href={canonicalUrl} />
 
       </Head>
+      {/* <ServicesSchema /> */}
+
       <Hero
-        title="High-Quality CDR Report Writing Service for Engineers Australia"
-        details="Engineering Applicants seeking the best service provider for CDR Writing? Grab your high-quality CDR Report to get 100 % Approval from Engineers Australia."
+        title="CPD writing services for 
+        Engineers Australia (EA)"
+        details="Want positive Assessment from Engineers Australia then get help 
+        from our Expert Writers today."
       />
-      <ServicesForEngineers />
+      <ContinuingServices />
+      <CDRReportAccepted
+        title="What does CPD, Continue Professional Development, mean?"
+        data="CPD is the process to help you to keep updated with the current happening scenario of engineering news  after  your  undergraduate  qualification. It supports all  your  personal development precisely be documented as a professional. A well-prepared, high-quality CDR Report consists of all the critical aspects such as date, time, duration, venue, and organiserin  the  tabular  format  by  following  all  the  guidelines  of the MSA  booklet described by Engineers Australia (EA)."
+        buttonName="Check Pricing"
+      />
+      <FeaturesOfCPD />
+      <DifferentTypes />
+      <MostOfYourCPD />
       <Steps
         tabItem={[
           {
-            description: `Once you finish writing the Career Episodes, their corresponding CPD
-          and summary statements have to be revised or reviewed to make sure
-          there aren’t any mistakes. You should revisit all the documents and
-          see if all the technical parts are included or not. Also, to
-          maintain the quality of language, check the grammatical mistakes and
-          spelling errors thoroughly.`,
-            title: "01. Read Guidelines",
+            description: `Best CPD writers in Australia, CDRXperst, consider all the outcomes of the activities that are important to you.`,
+            title: "Step 01",
+            extraContent: `Engineers Australia (EA) will consider the efforts you have been making to stay updated to the constant changes in the field to fit in as per their requirements. By keeping all the needs provided by Engineers Australia (EA), we, CDR For Engineer, known for Top CPD Report Writing  service  provider  in  Australia, is  here to givean  overview  of  your  professional learning and development on an ongoing basis.`,
           },
           {
-            description: `After you check the guidelines and get information from them regarding CDR preparation, projects to consider, and other 
-          technicalities in the CDR, it is time to make the plan and strategy for further work.`,
-            title: "02. Developing a Strategy",
+            description: `We Mention if that activity would help you in your current job domain`,
+            title: "Step 02",
+            extraContent: `Engineers Australia (EA) will consider the efforts you have been making to stay updated to the constant changes in the field to fit in as per their requirements. By keeping all the needs provided by Engineers Australia (EA), we, CDR For Engineer, known for Top CPD Report Writing  service  provider  in  Australia, is  here to givean  overview  of  your  professional learning and development on an ongoing basis.`,
           },
           {
-            description: `You should start writing after you choose three projects for the base of your three Career Episodes. This part is essential and crucial. You 
-          should have excellent writing skills and the right knowledge of the content you are supposed to describe in the CDR Report. You 
-          should be wise while writing and decide what to keep and what to leave. The essential technical details must not be left 
-          out, including figures, simple calculations, etc. and other information that isn’t critical need to be left out. The 
-          Engineers Australia have set the word limit for career episodes, so be tactful in writing and including all 
-          the crucial details in it. At this point, hiring a professional would be a great idea.`,
-            title: "03. Start Writing",
+            description: `We mention and consider all thosefactsand factorsthat helpand benefitothercolleaguesand your employersin some way`,
+            title: "Step 03",
+            extraContent: `Engineers Australia (EA) will consider the efforts you have been making to stay updated to the constant changes in the field to fit in as per their requirements. By keeping all the needs provided by Engineers Australia (EA), we, CDR For Engineer, known for Top CPD Report Writing  service  provider  in  Australia, is  here to givean  overview  of  your  professional learning and development on an ongoing basis.`,
           },
           {
-            description: `Once you finish writing the Career Episodes, their corresponding CPD and summary statements have to be revised or reviewed 
-          to make sure there aren’t any mistakes. You should revisit all the documents and see if all the technical parts are included or 
-           not. Also, to maintain the quality of language, check the grammatical mistakes and spelling errors thoroughly.`,
-            title: "04. Revise and Reflect",
+            description: `We mention if that activity gives any benefits you can see in an extended period.`,
+            title: "Step 04",
+            extraContent: `Engineers Australia (EA) will consider the efforts you have been making to stay updated to the constant changes in the field to fit in as per their requirements. By keeping all the needs provided by Engineers Australia (EA), we, CDR For Engineer, known for Top CPD Report Writing  service  provider  in  Australia, is  here to givean  overview  of  your  professional learning and development on an ongoing basis.`,
           },
           {
-            description: `After the effort of preparing the CDR with maintaining all the guidelines and techniques, there might be some mistakes and errors which 
-         will not make an excellent impression to EA evaluators. Therefore you need to seek advice and suggestions about the quality of the 
-         CDR you have prepared by the professionals. Since you don’t have any idea about how it is goingto be assessed by EA, it is an 
-         excellent initiative to have someone else take a look at it, note down the points that can be improved, and tell you accordingly 
-         about it. CDRReportWriters.com can be the best option for taking advice about your CDR. They provide high-quality CDR 
-         writing services along with CDR reviewing and plagiarism checking service.`,
-            title: "05. Look for Advisors",
+            description: `We review your CPD activities in the CPD Statement Writing from time to time and seek the future scope of improvement`,
+            title: "Step 05",
+            extraContent: `Engineers Australia (EA) will consider the efforts you have been making to stay updated to the constant changes in the field to fit in as per their requirements. By keeping all the needs provided by Engineers Australia (EA), we, CDR For Engineer, known for Top CPD Report Writing  service  provider  in  Australia, is  here to givean  overview  of  your  professional learning and development on an ongoing basis.`,
+          },
+          {
+            description: `We analyse all  the challenges you  might  have  faced  while  continuing  these activities and mention how you can cope.`,
+            title: "Step 06",
+            extraContent: `Engineers Australia (EA) will consider the efforts you have been making to stay updated to the constant changes in the field to fit in as per their requirements. By keeping all the needs provided by Engineers Australia (EA), we, CDR For Engineer, known for Top CPD Report Writing  service  provider  in  Australia, is  here to givean  overview  of  your  professional learning and development on an ongoing basis.`,
           },
         ]}
       />
-      <StepsBeforeHiring />
-      <AustraliaGuarantees />
+      <ElementsOfCPD />
       <CDRReportAccepted
-        title="Are you looking for professional help for your CDR Report?"
-        data="Get a complete package of professional CDR Report with a guaranteed positive assessment. You can get a free consultation with our experts."
+        title="Why choose CDR For Engineer for CPD writing services for Engineers Australia "
+        data="Indeed,you can’t find out your own mistake by yourself. So, having others review your CDR  can  reveal  the  errors  and  problems  of  your  report.  CDR For Engineercan  save  your  CDR report from getting rejected by EA.Our excellent professional writers deliver high-quality CDR  for  engineers  willing  to  migrate  to  Australia.  Our  Experienced  professional  writers work on the CDR reviewing process to ensure all the information you provideis mentioned in  your  CDR  in  a  perfect  and  acceptable format. Our best  CPD  writers  in  Australiaare always ready to give you the best service in CPD Report writing for Engineers Australia.Following the guidelines mentioned inthe MSA bookletby Engineers Australia(EA).Ifyou wonderhow to write a perfect CPD Report for engineers in Australia, remember us"
         buttonName="Get Free Consultation"
       />
-      <CDRAssessmentsComponent />
-      <MoreServices />
-    </>
+      <ImportanceOfCPD />
+    </div>
   );
 };
 
-export default CDRWriting;
+export default CPDWriting;

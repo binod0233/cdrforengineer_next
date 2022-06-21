@@ -27,7 +27,7 @@ to assist you."
             className="formSubmitButton"
             variant="primary"
             type="submit"
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
 
           >
             Contact Us

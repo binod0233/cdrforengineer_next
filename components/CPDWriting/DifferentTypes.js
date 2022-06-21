@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
-import "./CPDWriting.css";
 
 const DifferentTypes = () => {
   return (

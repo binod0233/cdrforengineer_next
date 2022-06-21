@@ -1,5 +1,5 @@
 import React from "react";
-import  Link  from "next/link";
+import Router from 'next/router'
 
 const SampleCard = ({ image, code, field, link }) => {
   return (
@@ -63,16 +63,13 @@ const SampleCard = ({ image, code, field, link }) => {
             textAlign: "center",
             cursor: "pointer",
           }}
-          // onClick={() => navigate("/cdr-sample/engineer")}
         >
-          <Link
-            className="viewSampleLink"
-            href={link}
-          >
-            
-            View Sample 
           
-          </Link>
+            <div onClick={()=>{ Router.push(`${link}`)}} style={{color:"black"}}>
+            View Sample 
+            </div>
+          
+          
         </div>
       </div>
     </div>

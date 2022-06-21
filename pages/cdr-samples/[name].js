@@ -7,6 +7,7 @@ import CDRReportAccepted from "../../components/Home/CDRReportAccepted";
 import OurFeatures from "../../components/SpecificSample/OurFeatures";
 import Hero from "../../components/Hero";
 import {useRouter} from 'next/router'
+import CheckIcon from '@mui/icons-material/Check';
 
 const SpecificSample = () => {
   const router = useRouter()
@@ -69,29 +70,29 @@ const SpecificSample = () => {
               Includes:
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Organizing meetings with the departments involved.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assessing the project plan and budget.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Updating on the project status.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Drafting notes on the project's progress to be delivered to the
               supervisors.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Controlling the project's process and documentation to satisfy the
               criteria, as well as making efficient use of the project's
               resources.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Creating a project implementation plan to describe the work that
               needs to be done.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Submitting the most recent and complete project progress data to
               the company's online platform.
               <br />
@@ -110,27 +111,27 @@ const SpecificSample = () => {
               industrial engineer. The Author’s Duties Includes:
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examining project documentation, process flow diagrams, and
               flowcharts.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Thoroughly examining the organization's operations.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Eradicating any delays in daily operations.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assessing the operation's existing environmental requirements.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Creating the project's budget and time allocations.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Regularly checking the project's development and providing any
               form of a proposal for the same.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Building a unique workflow for the project to optimize the usage
               of equipment and resources for cost and process optimization.
               <br />
@@ -155,27 +156,27 @@ const SpecificSample = () => {
               </strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the optimal solution for a mechanically based water
               treatment plan.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the best operating parameters (centrifugation-Number
               and centrifugation-duration) during centrifugation.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform separation of the solid components and minimise the
               bacteria with the help of the low-pressure ultra-filtration
               method.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the disc separator.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the cost analysis data report.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
+              <CheckIcon className='me-2'/>
               To determine the cost analysis data report.
               <br />
               <br />
@@ -237,21 +238,21 @@ const SpecificSample = () => {
               was the title of the project. The author's Tasks Includes:
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               evaluating conventional systems and determining the primary design
               criteria
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Choosing the proper size of the suggested separator.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Completing the dimensions and physical design of the
               separatorandcomponent selection.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Locating and applying chemical and biological design treatment.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analysing costs and determining a technique for system development
               and optimisation.
               <br />
@@ -272,33 +273,33 @@ const SpecificSample = () => {
               <br />
               <br />
               <strong>The Author's Duties and Resposibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analyse to determine the optimum way of purification of spent
               lubricating oilfrom the different available procedures.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the feasibility method by evaluating the economics of a
               used lubricating oil purification facility.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Endeavour to purify leftover lubricating oil collected from a
               variety of Automobiles.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Put the new machinery in place and commission them.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design a schematic illustration of a lubricating oil purification
               process.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform physical and chemical tests on purified lubricating oil
               and analyse the outcomes of previously utilised lubricant oil.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               In lubricating oil, combine the necessary elements.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the economy andthe cost of setting up a purification
               plant.
               <br />
@@ -323,21 +324,21 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explore the various procedures used in an oil refinery
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               . To Study petrochemical materials and their manufacturing
               techniques.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To examine the refinery's naphtha cracker as well as other
               methods.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explore the combination of a refinery anda naphtha complex.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To learn more about the chemical compounds used in refineries.
               <br />
             </div>
@@ -404,27 +405,27 @@ const SpecificSample = () => {
               was the title of the project. The author's Tasks Includes:
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine Titanium's physical and chemical characteristics
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Study the different ways of Titanium reduction.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create an operational plan for performing TiO2 electrochemical
               reduction. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Undertake studies on the Titanium extraction procedure by
               electrochemical reduction of Titanium <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Dioxide that is being carried out at DMRL. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Keep track of the criticalparameters at all times during
               experiments. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Compute the material balance for the production of one kilogram of
               Titanium <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Compute the potential DC needed for producing 1kg of Titanium.{" "}
               <br />
             </div>
@@ -447,26 +448,26 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author's Duties and Resposibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate several nanoparticle production processes and choose the
               most viable one. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Apply thermal decomposition to conduct the chemical synthesis of
               nanoparticles.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Through the use of XRD equipment, identify the phases of
               nanoparticles.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To estimate the size of nanoparticles, do a scanning electron
               microscopy (SEM) analysis.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Measure the magnetic characteristics of produced
               nanoparticlesUsing the Vibrating Sample Magnetometer (VSM)
               technique. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Determine the composition and purity of Nanomaterials to conduct
               energy-dispersive X-ray spectroscopy (EDX) experiment. <br />
             </div>
@@ -491,21 +492,21 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Present a literature review about metal matrix composites,
               focusing on their manufacturing process and physical and
               mechanical behaviour. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Choose materials for the composite’sfabrication.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Fabricate the composites using selected materials.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate the mechanical and physical characteristics of the
               manufactured composites.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Carry out a detailed analysisof the test results.
               <br />
             </div>
@@ -570,24 +571,24 @@ const SpecificSample = () => {
               was the title of the project. The author's Tasks Includes:
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design and construction of the G+3 and G+4 storey buildings.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Structural evaluation of the designed building.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Identifying and analysing pushover hinges on constructing models.{" "}
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Undertake studies on the Titanium extraction procedure by
               electrochemical reduction of Titanium <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analysis of the building’s mass irregularities.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluation of movement and functionality. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               <br />
             </div>
           ),
@@ -608,18 +609,18 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author's Duties and Resposibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Understand and Analysis the structure using ETBAS software. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Structural study of the system using various techniques.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluation of the structure's wind forces.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Ensure that the ETABS software is authentic and accurate.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Use ETABS software to analyse the diagrid and conventional framed
               buildings beneath seismic and wind Force. <br />
               <br />
@@ -645,23 +646,23 @@ const SpecificSample = () => {
               <strong>Writer’s Activities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Use and interpretation of the methodology in SAP 2000.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Grid definition and modification, diagonal bracing, and inverted V
               bracing.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Water tank design and Analysis.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Construct a Water Tank that is both affordable and secure.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Carry out a detailed analysisof the test results.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               An examination of the behaviour of several staging systems.
             </div>
           ),
@@ -722,21 +723,21 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Calculating the value of the number of ore handled by the plant
               per year.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analyze the plant's results for solid concentrations, average
               bubble size, frontal depth, etc.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Calculate the base case numeric value through the add-in Solver in
               Excel. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Calculate the gangue entertainment value and the surface runoff in
               the concentrate and feed. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Change the settings of sir recovery, air velocity, and other
               variables to see how they affect the grade rover curve.
               <br />
@@ -755,20 +756,20 @@ const SpecificSample = () => {
               <strong>" Ajax Project”.</strong>
               <br />
               <strong>The Author's Duties and Resposibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Use industry standards for geological information assembly. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assess the Cost model, Block model, and System mass balance.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Meet the test pattern compaction timetable only with the
               assistance of heavy machinery.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Explore log core using the DH Logger software. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Applying GPS to collect water samples. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform solid cutting with the support of a Geotechnician. <br />
             </div>
           ),
@@ -790,23 +791,23 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Discover the characteristics of the research region and examine
               the geology and soil conditions on the bank of the river.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the hydrological parameters of the selected location and
               evaluate the construction of the current dam.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Carry out constant moisture in the soil measurements in specified
               soil profiles and document and assess the results.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate soil moisture variations and the mechanisms of moisture
               changes using a meteorological analysis of the region.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the impact of damming the Malcyzce River on the soil
               characteristics in the vicinity.
               <br />
@@ -870,20 +871,20 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate the impact of blast loads on a typical highway bridge in
               the United States.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Determine frequent factors that cause bridge element destruction.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the link between seismic design with blast load effects.{" "}
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine blast-induced failure processes to show a hypothetical
               bridge target subjected to various levels of seismic loads. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Explore the use of seismic design for blast-induced bridge
               structures.
               <br />
@@ -903,19 +904,19 @@ const SpecificSample = () => {
               <strong>"Vertical Transport Evacuation Modelling”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate the impact of blast loads on a typical highway bridge in
               the United States. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Determine frequent factors that cause bridge element destruction.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the link between seismic design with blast load effects.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine blast-induced failure processes to show a hypothetical
               bridge target subjected to various levels of seismic loads. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Explore the use of seismic design for blast-induced bridge
               structures. <br />
             </div>
@@ -939,19 +940,19 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Conduct a complete analysis of the MGS long-span guardrail system
               using LS-DYNA's finite element software tool.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Construct and assess the structural capabilities of the MGS
               long-span guardrail system when spanning lengths are extended.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Obtain the maximum unstable size for the existing long-span
               layout.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assess future changes that might result in much extended
               unsupported spans. Fulfil the American Association of State
               Highway and Transportation Officials (AASHTO) Test Level 3 (TL-3)
@@ -1014,18 +1015,18 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Choose the appropriate components for the IGC system
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create the functional block diagram for the system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assemble the multiple aspects by the block diagram. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate the lab-built IGC system with available commercially IGC
               systems. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assess the performance of the fabricated IGC system.
               <br />
             </div>
@@ -1047,21 +1048,21 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Gather together various hardware and software components for the
               project's design and simulation. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a model and test a PV system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design and modelling a wind turbine system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Utilise and manage a cell for energy storage.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a PV system with a Control scheme. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a prototype model and evaluate the performance of the
               constructed hybrid model. <br />
             </div>
@@ -1083,21 +1084,21 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform research on the parts used for the robotic arm and the
               programming methods.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Effectively code in Visual C#, which was the core of the project's
               programming.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Construct a suitable microcontroller circuit for connecting with
               the RF unit and PC.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design and build the project's mechanical component. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform cost analysis of the project's aspects and expenses.
               <br />
             </div>
@@ -1156,17 +1157,17 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Choose the appropriate components for the IGC system <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create the functional block diagram for the system. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assemble the multiple aspects by the block diagram.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Evaluate the lab-built IGC system with available commercially IGC
               systems. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assess the performance of the fabricated IGC system.
               <br />
             </div>
@@ -1188,21 +1189,21 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Gather together various hardware and software components for the
               project's design and simulation. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a model and test a PV system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design and modelling a wind turbine system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Utilise and manage a cell for energy storage.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a PV system with a Control scheme. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a prototype model and evaluate the performance of the
               constructed hybrid model. <br />
             </div>
@@ -1224,21 +1225,21 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform research on the parts used for the robotic arm and the
               programming methods.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Effectively code in Visual C#, which was the core of the project's
               programming.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Construct a suitable microcontroller circuit for connecting with
               the RF unit and PC.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design and build the project's mechanical component. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform cost analysis of the project's aspects and expenses.
               <br />
             </div>
@@ -1300,17 +1301,17 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Establish the bridge's framework. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform research studies and enhance the structure. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Calculate the loading condition.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Create a structural design concept.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assess the impact of the System.
               <br />
             </div>
@@ -1331,26 +1332,26 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analyse and undertake a comprehensive understanding of the overall
               project and identify the most significant project components.
               Assess the Cost model, Block model, and System mass balance.{" "}
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Conduct critical testing for the experiments. Explore log core
               using the DH Logger software.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Focus on the fibre specification requirements and test results.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Check the samples to their maximum load using a hydraulic jack.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Carry out the test system and explore techniques for calculating
               curvature, deflection, fracture width, ductility factor, and other
               parameters. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the entire project and assess the success. <br />
             </div>
           ),
@@ -1373,19 +1374,19 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Assess the structure's static and other qualities.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Study the properties of the materials utilised.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Construct long-lasting materials.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine and oversee the employees on-site for structural and
               finishing work. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine and verify the plant's long-term viability.
               <br />
             </div>
@@ -1447,23 +1448,23 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Produce an optimal layout based on total flow cost and choose a
               suitable approach. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analysis layout that you selected by computing the pairwise
               distance and corresponding flow costs <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Compare the family-based and process-based approaches by keeping
               pros and cons in mind.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Compute material monitoring devices number.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Optimise the function cost of the new facility.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Implement strategies to maximise the efficiency of a new intended
               facility.
               <br />
@@ -1483,20 +1484,20 @@ const SpecificSample = () => {
               <strong>“Project Life Cycle Trajectories Prediction”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Complete and good project Review.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               With the Clustering methodology, non-parametric time series
               modelling of the data.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Using Descriptive aspects effectively analyse the data.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Choosing the similar characteristics of each cluster.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Formulate guidelines regarding sales trends with the help of the
               decision tree approach. <br />
             </div>
@@ -1518,22 +1519,22 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To depict the sales data of diesel and gasoline.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyse the general sales aspect.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To observe the data using forecasting with different regression
               methods.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Execute various strategies by writing R code. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To depict graphs for various analysis models.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compare the monitoring model and select the best model.
               <br />
             </div>
@@ -1600,19 +1601,19 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To implement designing injection-moulded plastic elements,
               specifically dustbin lids. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To choose Materials for the process of fabrication. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform analysing, simulating and validating for finding
               different aspects under three other cooling mediums.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compute the outcome attained from the simulation method of the
               designed elements. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop conclusions based on analysed design results. <br />
             </div>
           ),
@@ -1634,21 +1635,21 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explore the factors that influence the contact angle and its
               wettability on numerous materials such as glass
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To examine various methods of measuring the contact angle
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To choose the substance and fluid used in the testing pha
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To possess all the measurement processes to determine the
               droplet's surface area
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To generate a seamless curve trend line from which the polynomial
               equation was obtained <br />
             </div>
@@ -1673,15 +1674,15 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To learn more about shot blasting machines. Its procedure and
               functioning
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To define the project's scope, find out the cause, and propose a
               solution.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine ball wheel patience and quantify execution duration
               and wheel loss
               <br />
@@ -1746,20 +1747,20 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Take relevant courses and conduct them based on the literature
               reviews for the project. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To manage the project of forming a new Autoline from dying to trim
               appropriate methodology for DSO packages. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To oversee the end-of-line (EOL) process, including moulding,
               tie-bar cutting, and laser marking.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To contribute to the line's long-term viability and advancement.{" "}
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To boost the machine's overall performance. <br />
             </div>
           ),
@@ -1781,26 +1782,26 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Identify the scope and purpose of the designated project by
               referring to some of the relevant project works.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To collect benchmark data about current continuous improvement and
               evaluate it for trending activities.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To help make sure the product’s stability and predictability.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To instruct the group on using the Design of Experiment (DOE)
               technique to comply with the requirements.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To collaborate with outsourcing companies to establish a new
               fixture for the advancement procedure.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To carry out a comprehensive validation including IQ, OQ, and PQ
               following the protocol.
               <br />
@@ -1825,22 +1826,22 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To introduce jigs and fixtures to ensure consistency in the
               process.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create and implement Transformed Automated Tensioning and
               Crimping.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Introduce and implement a customised Automated Vision System for
               raw material and finish quality control.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Participate in product prototyping for process development.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To assist with creating required documents such as validation
               protocols and other intrinsic documentation.
               <br />
@@ -1909,21 +1910,21 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyse the critical aspects for block values and put the
               formulas to compute these values. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Develop a Model in MS-Excel and VBA Applications to give input.{" "}
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To construct the modelling factors for block values functioning
               and pit modelling calculations.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compute and model the final pit online in MS-Excel Application
               and get the ultimate output.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Authenticate the processed model by crosschecking the layout and
               design with other software methods. <br />
             </div>
@@ -1945,20 +1946,20 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To formulate cone for safety and fluent process of the mine.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To keep updated infrastructure data by maintaining the data of
               each process close to the site.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To upkeep failure aspects in the geo-tech domain.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To inspect ore in the geology field.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform quality inspection and QA tasks in the project
               Engineering field.
               <br />
@@ -1981,29 +1982,29 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Explore 3D model designs
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To investigate the excellent pre-strip removal without
               compromising coal with certain strip layback angles and widths.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyse the appropriate dragline aspects to use in the
               scenario.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Evaluate the best mining elements capabilities to be
               implemented in the design.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyse and evaluate economic achievement or loss.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Explain the geology and geotechnical factors of the mine.
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare a spreadsheet of NPV computations with cost methods in
               FOB prices.
               <br />
@@ -2072,21 +2073,21 @@ const SpecificSample = () => {
               was the title of the project. The author's Tasks Includes:
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               evaluating conventional systems and determining the primary design
               criteria
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Choosing the proper size of the suggested separator.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Completing the dimensions and physical design of the
               separatorandcomponent selection.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Locating and applying chemical and biological design treatment.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analysing costs and determining a technique for system development
               and optimisation.
               <br />
@@ -2107,33 +2108,33 @@ const SpecificSample = () => {
               <br />
               <br />
               <strong>The Author's Duties and Resposibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Analyse to determine the optimum way of purification of spent
               lubricating oilfrom the different available procedures.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the feasibility method by evaluating the economics of a
               used lubricating oil purification facility.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Endeavour to purify leftover lubricating oil collected from a
               variety of Automobiles.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Put the new machinery in place and commission them.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design a schematic illustration of a lubricating oil purification
               process.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform physical and chemical tests on purified lubricating oil
               and analyse the outcomes of previously utilised lubricant oil.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               In lubricating oil, combine the necessary elements.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Examine the economy andthe cost of setting up a purification
               plant.
               <br />
@@ -2157,22 +2158,22 @@ const SpecificSample = () => {
               <strong>Writer’s Key Responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To select the effective term in amalgamation with the proportional
               element for offering an excellent response to the system changes.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To obtain and explore the procedure of the PCT 51 and the
               involvement of various elements.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To test for the on/off control flow or the closed-loop.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To test the proportional control flow utilising a closed-loop with
               P only and P+I.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To obtain the graph outcomes and complete the system stability
               with the help of various disturbances.
               <br />
@@ -2240,27 +2241,27 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare aircraft design calculations. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To calculate the height-clearance from the floor of the propeller
               engine is required.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compute the permission attachment of gear needed to the
               fuselages and the wings.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compute the Nose gear land and main gear load.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To calculate the shock absorber dimension. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design the landing gear in software.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To calculate the size of the hole. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare the lug design. <br />
             </div>
           ),
@@ -2282,20 +2283,20 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform designing model using AUTOCAD software.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyse the functioning process in Detail.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare a dynamical simulation of the flapping system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compare the theoretical data using experimental data obtained
               from the prototype.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To assume theoretical lift.
               <br />
             </div>
@@ -2319,28 +2320,28 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To select different factors in aircraft out of various possible
               outcomes.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop a set of necessities for constructing an outline of the
               design.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To search out the aircraft configuration.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To build a conceptual design.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To outline 3D and AutoCAD in SOLIDWORKS.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To concentrate on the fabricating process design.
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To experiment with the flight from the ultimately gathered
               prototype.
               <br />
@@ -2409,26 +2410,26 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To carry out research and analysis of relevant literature on the
               project. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To organise project tasks.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create a voice-controlled system for commercial use in existing
               wheelchairs.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create a noise-filtering speech recognition unit.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To minimise the error interference using a bandpass filter.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To make use of high-quality microphones and voice sensors.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To put the designed system into the experiment. <br />
             </div>
           ),
@@ -2445,19 +2446,19 @@ const SpecificSample = () => {
               <strong>“Dealing with the Biomedical signals”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To amass a valuable and valuable data set for the project. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To keep updated infrastructure data by maintaining the data of
               each process close to the site. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform Temporary Fourier Assessment and Sustained Wavelet
               Transform. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyse Signals in various motions. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create a DWT filter. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create a DWT filter. <br /> <br />
             </div>
           ),
@@ -2478,18 +2479,18 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To ascertain the standard requirement for the ECG amplifier
               stream. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To configure design specifications, perform operations and choose
               the elements for the design. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create additional level shifting characteristics and a suitable
               leg drive circuit. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To put the strategy into action and make an ECG amplifier. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To put the system through its paces and collect data on its
               effects. <br />
             </div>
@@ -2552,21 +2553,21 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare a Gantt chart and plant for the start and end period of
               the task.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the water tank for the simulation purpose.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the water tank for the simulation purpose.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Develop the tank foundation plate to make the plate surface smooth
               and effective.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To measure different parameters of the wave with the help of
               sensors.
               <br />
@@ -2588,20 +2589,20 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Explore the influence on inductive energy of saltwater and
               lunar regolith at positioning tolerances. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Evaluate the probability of using induction of power with the
               help of coils to transfer the energy in the extreme <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To manage the experiment to deal with the condition by varying
               various situations, including the channel of functioning and the
               distance between the coils used to make the magnetic field. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To observe the drawbacks in the inductivity level with various
               materials varied on the surrounding. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform a survey regarding power sources practised when
               operating in extreme environmental conditions. <br />
             </div>
@@ -2623,18 +2624,18 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To ascertain the standard requirement for the ECG amplifier
               stream. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To configure design specifications, perform operations and choose
               the elements for the design. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create additional level shifting characteristics and a suitable
               leg drive circuit. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To put the strategy into action and make an ECG amplifier. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To put the system through its paces and collect data on its
               effects. <br />
             </div>
@@ -2699,22 +2700,22 @@ const SpecificSample = () => {
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the drawback of slot, ridge and disk planting on the
               satiated hydraulic conductivity in a furrow irrigated domain and
               calculate satiated hydraulic conductivity on dryland tilled and
               no-till plots.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform factors investigation to maximise the satiated
               hydraulic conductivity and minimise runoff.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Explore centre pivot irrigated tilled and no-till fields to
               determine the limitation of no-till planting on infiltration and
               runoff.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To investigate four pedotransfer operations methods: crust
               aspects, ROSETTA, an equation mainly used in the water Erosion
               prediction project (WEPP) and soil water features tool (SWC) to
@@ -2739,20 +2740,20 @@ const SpecificSample = () => {
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explain ROOT problems and solutions to ROOT. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To offer two benchmarks obtained for ROOT.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To propose a novel algorithm procedure especially for solving
               ROOT.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To showcase the benefits of the proposed procedure by comparing a
               representative TMO method with an instantiation of the proposed
               framework. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform a dynamic handling strategy. <br />
             </div>
           ),
@@ -2772,44 +2773,44 @@ const SpecificSample = () => {
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To construct an environmentally-friendly pultrusion method for
               fibre-reinforced composites production. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the composites' physical, thermo-mechanical and
               mechanical properties pultruded.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform and evaluate resin impregnators to make the clean
               pultrusion technique. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and determine a rig for the lateral spreading of the
               rovings. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To showcase the clean extrusion innovation in the laboratory and
               under industrial aspects. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compare the features of the composites obtained with the help
               of clean and conventional extrusion processes.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform an LCA on the clean and conventional pultrusion
               procedure.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To obtain the best solution for a mechanically based water
               treatment strategy. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the best functional aspects (centrifugation number
               and duration) during centrifugation. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To distinguish the solid components and reduce the bacteria
               following a low-pressure ultrafiltration process.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the disc separator.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the disc separator.
               <br />
             </div>
@@ -2874,24 +2875,24 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To activate the original production of best quality magnesium
               alloy forging feedstock by Dc casting without incurring extra
               costs.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop a reliable inspection method to benefit the demands of
               the industry.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Determine a plan and strategies to minimise the occurrence of
               minor-si defects during production by DC casting.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Determine a plan and strategies to minimise the occurrence of
               minor-si defects during production by DC casting.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To know the ability of the ultrasonic equipment to locate defects
               and offer an assessment of the billet quality.
               <br />
@@ -2913,29 +2914,29 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Explore the limitations of excess Mg additions on the
               microstructure and mechanical aspects of A1-Mg2si alloys and to
               know the relationship between microstructure, solidification, and
               resultant automatic features. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Maximise the composition of a1-Mg2si-mg alloys capable of
               offering high strength with reasonable flexibility. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explore the limitation of manganese addition in the A1-mg2si-mg
               alloy, which can maximise the strength of the alloy without
               minimising the ductility. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explore the limitation of manganese addition in the A1-mg2si-mg
               alloy, which can maximise the strength of the alloy without
               minimising the ductility. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Explore the drawback of impure elements, Fe in particular, on
               the microstructure and mechanical aspects and to know the alloy's
               solidification system and microstructural evolution at various
               stages of impurity and optimise the tolerable level for the
               impurity components. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To Explore the effect of heat treatment on the mechanical aspects
               of the alloy. The solution and aging treatment results in the
               microstructure and mechanical elements being considered.
@@ -2963,23 +2964,23 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To know the most recently used structural upkeeping measurements
               in civil engineering and determine the specifications for a
               photogrammetric system that could be deployed as a long-term
               structural upkeeping solution. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To propose a reasonable cost, in situ photogrammetric upkeeping
               system based on innovative off-the-shelf technology to meet the
               specifications of different structural monitoring software. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To implement and experiment with the essential requirements and
               operations proposed in objective two on a mobile platform. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prove the capability of the mobile photogrammetric solution to
               make sure the system’s performance is capable of long-term
               structural upkeeping purposes. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To construct an effective SHM system with low-budgeted spending.{" "}
               <br />
             </div>
@@ -3043,22 +3044,22 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Design, develop and analyze the system
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyze the response from various protocol on the model
               provided.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To explain the implementation of an API that utilizes the AutoMed
               infrastructure for providing capabilities to build systems of this
               nature.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To extend the AutoMed API to support P2PDI.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To display working system using API.
               <br />
             </div>
@@ -3076,20 +3077,20 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>“Simulation versus Coding”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To clarify, explain the routes created by a certain routing
               protocol. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Understand and denote the routing table convergence implications
               and implicating it. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Writing a program to simulate a routing protocol using OPNET
               Modeler.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To compare round-tip packet delay time for both TCP and UDP
               protocols. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analyze the routing protocol convergence time
               <br />
             </div>
@@ -3114,20 +3115,20 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Improve the amount of data transferred reducing routing overhead
               using the ns-2 network simulator. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To improve the communication between MAC 802.11 protocol and
               Dynamic Source Routing (DSR) protocol <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To use request-for-request-to-send (RRTS) packet for achieving
               synchronization. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To implement tracing features to trace the signals received from
               neighboring nodes.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Perform simulations in both static and mobile scenario with two
               transport protocols (TCP and UDP) for checking the adaptability of
               project in various contexts. <br />
@@ -3194,20 +3195,20 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform textual review of older projects on network design.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To select required equipment from objective palette in the riverbed software.
 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and develop three sites; the main site, external far site and external near site.  
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine error before verifying the network.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To collect results and analyze the output of the project.
               <br />
             </div>
@@ -3224,16 +3225,16 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong> “Design and construction of hybrid wireless mesh network”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To start task from literature survey from different resources for gathering required information. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Preparation of AODV protocol for designing simulation network model. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and develop hybrid network protocol for the same network in order to compare it with AODV for designing simulation protocol.  
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To monitor and analyze packet delivery fraction and amount of data transferred of the network based on the increasing nodes. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To observe and analyze the PDF of simulation model based on transmission rates and constant position mobility etc. for both HWMP and AODV.
               <br />
             </div>
@@ -3255,23 +3256,23 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To collect information and data about LTE technology and develop a draw outline for designing.<br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design antenna with various sections to achieve minimum downstream data rate of 10Mbps. <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design the antenna without sectoring with a minimum downstream data rate of 12 Mbps.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Using cell planner to design the LTE network to obtain projects specification. 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To improve the performance of LTE networks by identifying problems by using Dump analysis. 
  <br />
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To test the performance of LTE network by trail and test method. 
  <br />
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To perform various trial and tests to evaluate the performance of LTE Networks. 
  <br />
             </div>
@@ -3339,19 +3340,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Using architectural drawing to initiate the setting up of background drawings for the sanitary work’s entire layout
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Using AutoCAD to prepare plan layout of different levels of sanitary drainage and storm water.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop the sizing of roof, storm water and drains and its offsets.  
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To organize and manage the size of sanitary and vent riser pipes of drainage system.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Preparation of detailed mapping of oil inceptor, cleanout connections and traps of the system.  
               <br />
             </div>
@@ -3368,16 +3369,16 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong> “Preparing plan, section, and details drawings of concrete frame structures of a residential building”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform the identification of the perfect positioning and size of reinforcement bars <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare plan and diagram of different slabs and steal bars to use in AutoCAD.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare a diagram of foundation plan and present it in section diagrams in AutoCAD.
   
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare a well-presented diagram of column section in AutoCAD.
               <br />
             </div>
@@ -3399,24 +3400,24 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare well mapped layouts of domestic water plumbing using architectural plan drawings in AutoCAD.
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare mapped layouts of hot and cold water flow using AutoCAD.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare mapped layouts of domestic water outlets in AutoCAD.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To identify the size of pipes for hot, cold, domestic water return and present in AutoCAD.
  
               <br />
              
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To test the performance of LTE network by trail and test method. 
  <br />
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To perform various trial and tests to evaluate the performance of LTE Networks. 
  <br />
             </div>
@@ -3484,19 +3485,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design operational framework and maintain low cost through steady state concept.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To maintain minimum costing throughout the project using single objective function and steady state models.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare digital operational methodology including connections of every process.  
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare single objective function with budget, operational cost and maintenance cost.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To select and design perfect peripheries of operation so that the operation is effective and cost friendly.  
   
               <br />
@@ -3514,28 +3515,28 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong> :“Construction of a solid 3D model of geology in Sardinia using GIS methods”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To use selective procedures while building in-order to save energy.  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design building parts with passive house concept to reduce energy consumption. 
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design construction compositions into two energy standards for selective systems.   
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To investigate and evaluate the planned operation and compare it.
 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To investigate and evaluate the planned operation and compare it.
 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare and provide the passive housing pricing and display the energy conservation done.
 
 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare a proposal for the project with time of work and detailed costing.
               <br />
             </div>
@@ -3556,23 +3557,23 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform visual study of the area to be researched
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To present the sample data and how it is scattered in various areas so that it supports the result.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To use GIS and software’s like surfer and voxler so that data modification is easier. 
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To collect concentrated data for studying geology and mineralogy of the area.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To collect concentrated data for studying geology and mineralogy of the area.
               <br />
              
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To monitor and direct day to day activities of the project.
  <br />
  
@@ -3642,19 +3643,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the degree and nature of voltage problems
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To identify contingencies and vulnerable connections to maintain power supply 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop a method to determine perfect locations with reduced complexity.   
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop methods for ideal allocation of static and dynamic VAR sources for single contingency.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop a method to reduce complexity and ideal allocation of static and dynamic VAR source for multiple severe contingencies considered simultaneously
 
   
@@ -3673,20 +3674,20 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong> “Evaluation of Microwave Microscopy for Dielectric Characterization”.</strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To develop calculations and measurements of standard samples.
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To implement the process of measurement of dielectric samples.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To check coupling coefficient and its effects.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To show the uncertainty in measurement of the permittivity of bulk samples.
 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To show the limitations of image charge model for the project 
 
               <br />
@@ -3709,26 +3710,26 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To study and predict electric energy and power consumption by electric vehicles or PEVs.
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To study in detail about the technologies used for grid-to-grid vehicle power transfer. 
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To prepare working structure for routine and distribution of electric power by PEVS.
  <br />
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
   To study the impact of distribution system from electric vehicles under aggregator control.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To study the power distribution pricing and how it impacts the electric vehicle owners.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and develop low capacity PEVs for long life and national distributing plans.
               <br />
              
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To monitor and direct day to day activities of the project.
  <br />
  
@@ -3796,19 +3797,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To analysis and collect required information of CEN for devices with LTE services.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To distribute resources like IP address and bandwidth, priorities DSLAM customers. 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform configuration of new components.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform configuration of hardware’s, analyze them so that it contributes in the networking.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform test of customer traffic after migration and network performance. 
 
   
@@ -3829,19 +3830,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
 </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To prepare and implement project management method to perform effectively.
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare detailed network diagram and define associated sites.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To distribute resources to sites as per the requirement of network architecture. 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To perform IP configuration while installation of hardware with cooperation with field team.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform the day-to-day update of daily project report and maintain activities.
               <br />
             
@@ -3864,19 +3865,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform work for maximum network performance by solving network problems. 
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform maintenance of information, data and package to operate in specific bandwidth range. 
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform support for remote on-site engineers during installation.
  <br />
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To provide 24-7 on-call support with customers through various medium. 
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To perform meeting among group and figure out work progress by preparing reports. 
               <br />
               
@@ -3943,23 +3944,23 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               The author outlines a project he worked on while completing his undergraduate coursework.              <strong>The author's responsibilities Includes:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To prepare future analysis of location and potential problems.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To use advanced technology for creating more capable and production ready systems.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To predict the saving from contact voltage detector by using various project variables.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To determine the supplier of energy present within a fixed radius.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design the handheld detector to detect two conditions: arcing, and false positives created by 
               an electric source like switch-mode power supplies for neon signs.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and develop handheld electricity/power detectors and specialize in two conditions i.e., arcing and false positives. 
               <br />
             </div>
@@ -3978,16 +3979,16 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
 </strong>
               <br />
               <strong>The Author’s Duties and Responsibilities Include:</strong>
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
                To design and develop operating framework for small scale dielectric companies using Metallic Oxide Semiconductor (MOS) devices.
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To create a model and explaining reliability of currently developed gate dielectrics of Si-MOS devices.
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To evaluate and determine the failure of high-k gates based on SI Stress.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To develop similar 3D failure to record data similar to actual failure.
               <br />
             </div>
@@ -4009,19 +4010,19 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
               <strong>Writer’s Duties and Responsibilities Include:</strong>
               <br />
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and develop flexible and warble thermoelectric device (TED) that cha changes up to 150 F temperature in 10 seconds with proper section between human and device.
 <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To design and develop visual heat transfer model to insure performance. 
  <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               To assemble components of thermoelectric manually. 
  <br />
- <i className="fa-solid fa-check me-2"></i>
+ <CheckIcon className='me-2'/>
  To design and develop big scale device to monitor thermoelectric behavior.
               <br />
-              <i className="fa-solid fa-check me-2"></i>
+              <CheckIcon className='me-2'/>
               Using thermoelectric devices to investigate the difference in input of heat from small and large area of body.
               <br />
               
@@ -4341,7 +4342,7 @@ to avoid possible rejections."
         <>
           <CDRSample
             title={allSamples.geotechnicalEngineer?.title}
-            titleDetails={allSamples.geotechnicalEngineer?.titleDetails}
+            titleDetails={allSamples.geotechnicalEngineer?.titleDetails} 
             image={allSamples.geotechnicalEngineer?.image}
             secondTitle={allSamples.geotechnicalEngineer?.secondTitle}
             secondTitleSecond={

@@ -34,22 +34,422 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 14 Days</p>
 
             </div>
-            <div             onClick={()=>$crisp.push(['do', 'chat:open'])
-} className='d-flex justify-content-center align-items-center' style={{height:'15%',background:'#FFAD05',marginBottom:'-20px'}}>
+            <div              onClick={() => Chatra("openChat", true)}
+ className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#FFAD05',marginBottom:'-20px',cursor:'pointer'}}>
               <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
             </div>
+            <div
+              className="pt-4 px-3"
+              style={{ display: firstActive ? "block" : "none" }}
+            >
+              
+              <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Career Episode
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Summary Statement
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             CPD
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Delivery Date
+
+              </Col>
+              <Col>
+              15 Working Days
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Quality Assured
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Plagiarism Free Reports
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Professional Writers
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              File Status Update
+
+              </Col>
+              <Col>
+          Once a week via
+call/message
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Handling Unlimited Contents
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             EA Portal Upload
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Documentation Guideline Help
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite CE on EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite project on EA
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>          
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Reports Inclusive
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+           
+            </div>
 
           </div>
-          <Button 
-          onClick={()=>setFirstActive("")}
-          style={{color:"#fff",outline:"none",background:"#F9C967",fontWeight:"400",border:"#fff",width:'100%',marginTop:'-50px',padding:'0'}}>
+          <Button className='pricingViewFeaturesButton'
+          onClick={()=>setFirstActive(!firstActive)}
+          style={{color:"#fff",outline:"none",background:"#F9C967",fontWeight:"400",border:"#fff",width:'100%',marginTop:firstActive?"0px":'-50px',padding:'0'}}>
             View Features<ExpandMoreRoundedIcon/>
 
           </Button>
          </Col>
          <Col md={3} xs={6} className="p-3">
-          <div style={{display:'flex',flexDirection:"column",border:"1px solid #3D9AA1", height: firstActive ? "fit-content" : "380px" ,paddingBottom:"10px", borderRadius: "20px 20px 0 0"}}>
+          <div style={{display:'flex',flexDirection:"column",border:"1px solid #3D9AA1", height: secondActive ? "fit-content" : "380px" ,paddingBottom:"10px", borderRadius: "20px 20px 0 0"}}>
             <div style={{height:'150px',background:'#3D9AA1',borderRadius: "20px 20px 0 0"}} className="d-flex flex-column justify-content-center">
               <div>
               <img src="/images/diamond.png" alt='' style={{height:'100px',width:'100px',margin:'20px 0 0 75px'}}/>
@@ -65,22 +465,422 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 10 Days</p>
 
             </div>
-            <div             onClick={()=>$crisp.push(['do', 'chat:open'])}
- className='d-flex justify-content-center align-items-center' style={{height:'15%',background:'#3D9AA1',marginBottom:'-20px'}}>
+            <div              onClick={() => Chatra("openChat", true)}
+ className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#3D9AA1',marginBottom:'-20px', cursor:'pointer'}}>
               <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
             </div>
-           
+            <div
+              className="px-3 mt-4"
+              style={{ display: secondActive ? "block" : "none" }}
+            >
+              <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Career Episode
 
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Summary Statement
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             CPD
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Delivery Date
+
+              </Col>
+              <Col>
+              10 Working Days
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Quality Assured
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Plagiarism Free Reports
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Professional Writers
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              File Status Update
+
+              </Col>
+              <Col>
+              Twice  a week via
+call/message
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Handling Unlimited Contents
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+           
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             EA Portal Upload
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Documentstion Guideline Help
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite any CE upon EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite any project upon EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>          
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Reports Inclusive
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+           
+            </div>
           </div>
+          
+          
           <Button 
-          onClick={()=>setFirstActive("")}
-          style={{color:"#fff",outline:"none",background:"#76D3DA",fontWeight:"400",border:"#fff",width:'100%',marginTop:'-50px',padding:'0'}}>
+          onClick={()=>setSecondActive(!secondActive)}
+          style={{color:"#fff",outline:"none",background:"#76D3DA",fontWeight:"400",border:"#fff",width:'100%',marginTop:secondActive?"0":'-50px',padding:'0'}}>
             View Features<ExpandMoreRoundedIcon/>
 
           </Button>
          </Col>
          <Col md={3} xs={6} className="p-3">
-          <div style={{display:'flex',flexDirection:"column",border:"1px solid #FFAD05", height: firstActive ? "fit-content" : "380px" ,paddingBottom:"10px", borderRadius: "20px 20px 0 0"}}>
+          <div style={{display:'flex',flexDirection:"column",border:"1px solid #D63E3E", height: thirdActive ? "fit-content" : "380px" ,paddingBottom:"10px", borderRadius: "20px 20px 0 0"}}>
             <div style={{height:'150px',background:'#D63E3E',borderRadius: "20px 20px 0 0"}} className="d-flex flex-column justify-content-center">
               <div>
               <img src="/images/platinium.png" alt='' style={{height:'100px',width:'100px',margin:'20px 0 0 75px'}}/>
@@ -96,22 +896,421 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 7 Days</p>
 
             </div>
-            <div             onClick={()=>$crisp.push(['do', 'chat:open'])}
- className='d-flex justify-content-center align-items-center' style={{height:'15%',background:'#D63E3E',marginBottom:'-20px'}}>
-              <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+            <div              onClick={() => Chatra("openChat", true)}
+ className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#D63E3E',marginBottom:'-20px',cursor:'pointer'}}>
+              <p style={{color:'white',fontSize:"20px",fontWeight:'700',}}>Order Now</p>
+             
             </div>
+            <div
+              className="px-3 mt-4"
+              style={{ display: thirdActive ? "block" : "none" }}
+            >
+              <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Career Episode
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Summary Statement
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             CPD
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Delivery Date
+
+              </Col>
+              <Col>
+              7 Working Days
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Quality Assured
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Plagiarism Free Reports
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Professional Writers
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              File Status Update
+
+              </Col>
+              <Col>
+              Daily in a week via
+call/message
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Handling Unlimited Contents
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             EA Portal Upload
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Documentation Guideline Help
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite CE on EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite on EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>          
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Reports Inclusive
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#FA2545",
+                background: "#F9F9F9",
+              }}
+            >
+              <CloseIcon/>
+            </Col>
+            </Row>
+            </div>
 
           </div>
           <Button 
-          onClick={()=>setFirstActive("")}
-          style={{color:"#fff",outline:"none",background:"#EB6D6D",fontWeight:"400",border:"#fff",width:'100%',marginTop:'-50px',padding:'0'}}>
+          onClick={()=>setThirdActive(!thirdActive)}
+          style={{color:"#fff",outline:"none",background:"#EB6D6D",fontWeight:"400",border:"#fff",width:'100%',marginTop:thirdActive?"0px":'-50px',padding:'0'}}>
             View Features<ExpandMoreRoundedIcon/>
 
           </Button>
          </Col>
          <Col md={3} xs={6} className="p-3">
-          <div style={{display:'flex',flexDirection:"column",border:"1px solid #40116F", height: firstActive ? "fit-content" : "380px" ,paddingBottom:"10px", borderRadius: "20px 20px 0 0"}}>
+          <div style={{display:'flex',flexDirection:"column",border:"1px solid #40116F", height: fourthActive ? "fit-content" : "380px" ,paddingBottom:"10px", borderRadius: "20px 20px 0 0"}}>
             <div style={{height:'150px',background:'#40116F',borderRadius: "20px 20px 0 0"}} className="d-flex flex-column justify-content-center">
               <div>
               <img src="/images/gold.png" alt='' style={{height:'100px',width:'100px',margin:'20px 0 0 75px'}}/>
@@ -127,16 +1326,421 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 5 Days</p>
 
             </div>
-            <div             onClick={()=>$crisp.push(['do', 'chat:open'])}
- className='d-flex justify-content-center align-items-center' style={{height:'15%',background:'#40116F',marginBottom:'-20px'}}>
+            <div              onClick={() => Chatra("openChat", true)}
+ className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#40116F',marginBottom:'-20px',cursor:'pointer'}}>
               <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
             </div>
+            <div
+              className="px-3 mt-4"
+              style={{ display: fourthActive ? "block" : "none" }}
+            >
+              <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Career Episode
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Summary Statement
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             CPD
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Delivery Date
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Quality Assured
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Plagiarism Free Reports
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Professional Writers
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              File Status Update
+
+              </Col>
+              <Col>
+              Daily in a week via
+call/message
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Handling Unlimited Contents
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+             EA Portal Upload
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Documentstion Guideline Help
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite CE on EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              Rewrite project on EA comment
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>          
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F9F9F9",
+              }}
+            >
+              <Col>
+              3 Reports Inclusive
+
+              </Col>
+              <Col
+              className="d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#0EAF00",
+                background: "#F9F9F9",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+            </Row>
+            </div>
 
           </div>
           <Button 
-          onClick={()=>setFirstActive("")}
-          style={{color:"#fff",outline:"none",background:"#6A2DA7",fontWeight:"400",border:"#fff",width:'100%',marginTop:'-50px',padding:'0'}}>
+          onClick={()=>setFourthActive(!fourthActive)}
+          style={{color:"#fff",outline:"none",background:"#6A2DA7",fontWeight:"400",border:"#fff",width:'100%',marginTop:fourthActive?"0px":'-50px',padding:'0'}}>
             View Features<ExpandMoreRoundedIcon/>
 
           </Button>
@@ -622,7 +2226,7 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
 
           >
             Order Now
@@ -1109,7 +2713,7 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
 
           >
             Order Now
@@ -1599,7 +3203,7 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
 
           >
             Order Now
@@ -2103,7 +3707,7 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
           >
             Order Now
           </div>

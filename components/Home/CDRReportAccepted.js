@@ -36,7 +36,7 @@ const CDRReportAccepted = ({ title, data, buttonName, contentBelow, link }) => {
             onClick={() => {
               if (link) router.push(link);
               else {
-                $crisp.push(['do', 'chat:open'])
+                 Chatra("openChat", true)
               }
             }}
           >

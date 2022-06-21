@@ -36,52 +36,7 @@ const HighQualityCareer = () => {
 
                 title: "Introduction",
               },
-              // {
-              //   details: (
-              //     <div>
-              //       The background section describes the context or project you
-              //       mentioned and the objective of that project. The project,
-              //       nature of the work area, and your roles and responsibilities
-              //       on the project are introduced briefly in this section. In
-              //       about 200 to 500 words, all the background information
-              //       should be described. There are mainly five sections of the
-              //       background part which are:
-              //       <br />
-              //       <br />
-              //       <strong>Nature of the Project:</strong> The technicalities
-              //       of the project are explained in brief, which describes what
-              //       kind of project you are explaining in your career episode
-              //       report and what area does it cater to.
-              //       <br />
-              //       <br />
-              //       <strong>Objectives:</strong> The objectives of the project
-              //       are elaborated.
-              //       <br />
-              //       <br />
-              //       <strong>Nature of Your Work Area:</strong> The first section
-              //       of the background contains information about the overall
-              //       nature of the project, but in this part, you provide the
-              //       details about the area of the project you worked on most of
-              //       the time.
-              //       <br />
-              //       <br />
-              //       <strong>Organizational Hierarchy Chart:</strong> To show
-              //       your particular position in the project’s hierarchy during
-              //       that specific Career Episode, you can use the Organization
-              //       Chart.
-              //       <br />
-              //       <br />
-              //       <strong>Roles and Responsibilities:</strong> You need to
-              //       provide at least six roles that you performed during the
-              //       project which show the technical aspects of the project. The
-              //       tasks can be about calculations, design, analysis,
-              //       fabrication/construction, testing, tackling problems, and
-              //       even project management.
-              //       <br />
-              //     </div>
-              //   ),
-              //   title: "Background",
-              // },
+              
               {
                 details: (
                   <div>

@@ -1,28 +1,37 @@
 import React from "react";
 import Head from "next/head";
 import {useRouter} from 'next/router'
-
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const OurAgents = () => {
   const router = useRouter()
   const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
 
-  const agents = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2];
+  const agents = [
+    {name:"Sirja Ksetri",image:"/images/ourAgents/1.png",facebookLink:"https://www.facebook.com/profile.php?id=100080927829387",linkedInLink:"",instagramLink:"",phone:"61482072510"},
+  {name:"Binu Ksetri",image:"/images/ourAgents/2.png",facebookLink:"https://www.facebook.com/profile.php?id=100082172346949",linkedInLink:"https://www.linkedin.com/in/binu-mishra-103168241/",instagramLink:"https://www.instagram.com/binu.cdrforengineer/",phone:"61482070864"},
+  {name:"Adhira Ksetri",image:"/images/ourAgents/3.png",facebookLink:"https://www.facebook.com/profile.php?id=100080942528620",linkedInLink:"https://www.linkedin.com/in/adhira-mahajan-/",instagramLink:"https://www.instagram.com/cdr_with_adhira/",phone:"61482070521"},
+  {name:"Maira Ksetri",image:"/images/ourAgents/4.png",facebookLink:"https://www.facebook.com/profile.php?id=100080996556778",linkedInLink:"https://www.linkedin.com/in/maira-thapa-536259241/",instagramLink:"https://www.instagram.com/cdr_with_maira/",phone:"61482072733"},
+  {name:"Samaira Ksetri",image:"/images/ourAgents/5.png",facebookLink:"https://www.facebook.com/profile.php?id=100080772975496",linkedInLink:"https://www.linkedin.com/in/samaira-singh-a790b1241/",instagramLink:"https://www.instagram.com/samaira.cdrforengineer/",phone:"61482071295"},];
   return (
     <div>
-     
-        <Head>
+      
+       <Head>
         <title>Meet Our Agents | CDR For Engineer</title>
         <meta name="description" content="Meet Our Agents | CDR For Engineer" />
         <link rel="canonical" href={canonicalUrl} />
 
       </Head>
-      <div className='d-flex flex-column justify-content-center align-items-center'>
+      {/* <div className='d-flex flex-column justify-content-center align-items-center'>
         <h1 style={{fontFamily:"Arial",fontSize:"34px",textAlign:'center', fontWeight:"700"}}>OOPS THIS PAGE IS </h1>
         <h1 style={{fontFamily:"Arial",fontSize:"34px",textAlign:'center',color:"#360b62 ", fontWeight:"700"}}> UNDER CONSTRUCTION</h1>
         <p>Sorry for the inconvenience. This Page will be avaiable Soon</p>
         <img src="/images/comming-soon.png" alt="under construction"/>
-      </div>
-      {/* <div
+      </div> */}
+      <div
         style={{
           background: `linear-gradient(
         90deg,
@@ -52,8 +61,8 @@ const OurAgents = () => {
         <Row className="mt-5">
           {agents.map((a, index) => {
             return (
-              <Col key={index} md={3} xs={6} className="p-3">
-                <Card
+              <Col key={index} md={3} className="p1-2 py-3">
+                <div
                   className="mb-2"
                   style={{
                     background: "#FAFAFA",
@@ -64,9 +73,9 @@ const OurAgents = () => {
                 >
                   <Row className="p-2">
                     <img
-                      src="/images/agent.jpg"
+                      src={a.image}
                       alt="agent"
-                      className=" img-fluid rounded"
+                      className=" img-fluid"
                       style={{ height: "300px", width: "300px" }}
                     />
                   </Row>
@@ -74,16 +83,20 @@ const OurAgents = () => {
                     <Col
                       style={{
                         fontFamily: "Century Gothic",
+                        textAlign:'center',
                         fontSize: "22px",
                         color: "#370C64",
                         fontWeight: "600",
                       }}
                     >
-                      Anna Ahuja
+                      {a.name}
                     </Col>
+                    </Row>
+                    <Row>
                     <Col
                       style={{
                         fontFamily: "Arial",
+                        textAlign:'center',
                         fontSize: "18px",
                         color: "#5A5757",
                         fontWeight: "400",
@@ -97,7 +110,7 @@ const OurAgents = () => {
                       <div
                         style={{
                           background: "#370C64",
-                          padding: "9px 7px",
+                          padding: "5px 5px",
                           display: "flex",
                           justifyContent: "center",
                           alignItems: "center",
@@ -106,15 +119,15 @@ const OurAgents = () => {
                           borderRadius: "100%",
                         }}
                       >
-                        <i
-                          style={{ fontSize: "15px" }}
-                          className="fa-solid fa-phone mx-1"
-                        ></i>
+                        <a href={a.facebookLink}>
+                        <FacebookRoundedIcon/>
+
+                        </a>
                       </div>
                       <div
                         style={{
                           background: "#370C64",
-                          padding: "9px 7px",
+                          padding: "5px 5px",
                           display: "flex",
                           justifyContent: "center",
                           alignItems: "center",
@@ -123,15 +136,15 @@ const OurAgents = () => {
                           borderRadius: "100%",
                         }}
                       >
-                        <i
-                          style={{ fontSize: "15px" }}
-                          className="fa-brands fa-linkedin-in mx-1"
-                        ></i>
+                                                <a href={a.linkedInLink}>
+
+                        <LinkedInIcon/>
+                        </a>
                       </div>
                       <div
                         style={{
                           background: "#370C64",
-                          padding: "9px 7px",
+                          padding: "5px 5px",
                           display: "flex",
                           justifyContent: "center",
                           alignItems: "center",
@@ -140,48 +153,15 @@ const OurAgents = () => {
                           borderRadius: "100%",
                         }}
                       >
-                        <i
-                          style={{ fontSize: "15px" }}
-                          className="fa-brands fa-twitter mx-1"
-                        ></i>
+                                                <a href={a.instagramLink}>
+
+                        <InstagramIcon/>
+                        </a>
                       </div>
-                      <div
-                        style={{
-                          background: "#370C64",
-                          padding: "9px 7px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          color: "white",
-                          margin: "5px 3px",
-                          borderRadius: "100%",
-                        }}
-                      >
-                        <i
-                          style={{ fontSize: "15px" }}
-                          className="fa-brands fa-instagram mx-1"
-                        ></i>
-                      </div>
-                      <div
-                        style={{
-                          background: "#370C64",
-                          padding: "9px 7px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          color: "white",
-                          margin: "5px 3px",
-                          borderRadius: "100%",
-                        }}
-                      >
-                        <i
-                          style={{ fontSize: "15px" }}
-                          className="fa-brands fa-facebook-f mx-1"
-                        ></i>
-                      </div>
+                     
                     </div>
                   </Row>
-                </Card>
+                </div>
                 <Row className="d-flex justify-content-center align-items-center">
                   <Button
                     className="px-4"
@@ -194,18 +174,20 @@ const OurAgents = () => {
                       border: "none",
                     }}
                   >
-                    <i
-                      style={{ fontSize: "20px" }}
-                      className="fa-brands fa-whatsapp me-2 "
-                    ></i>
-                    Talk with Anna
+                    <a
+            style={{ textDecoration: "none", color: "white" }}
+            href={`https://api.whatsapp.com/send?phone=${a.phone}`}
+
+          ><> <WhatsAppIcon style={{fontSize:'20px',marginBottom:'3px'}}/>
+          Talk with {a.name}</></a>
+                  
                   </Button>
                 </Row>
               </Col>
             );
           })}
         </Row>
-      </Container> */}
+      </Container>
     </div>
   );
 };

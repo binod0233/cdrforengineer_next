@@ -5,24 +5,9 @@ import PurpleHeading from "../PurpleHeading";
 const ServicesForEngineers = () => {
   return (
     <Container>
-      <PurpleHeading title="CDR Report Writing Services for Engineers Australia" />
+      <PurpleHeading title="Continuing professional development Services." />
       <p className="cdrWritingP">
-        CDR For Engineer is recognised as one of Australia&apos;s best CDR Report
-        Writing Service providers for high Quality (CDR) Competency
-        Demonstration Report Writing. CDR for engineer offers top-notch quality
-        services with a 100 % positive assessment and approval record of
-        Competency Demonstration Report(CDR) from Engineers Australia (EA). All
-        the engineering aspirants seeking an opportunity in Australia for
-        skilled Migration must prepare their quality CDR Report; only quality
-        CDR reports are given priority and have a 100% possibility of being
-        examined by Engineers Australia (EA).Writing a CDR report is a difficult
-        task, but it is also critical to make your CDR report plagiarism-free
-        and faultless for it to be authorisedby EA. With all of these
-        considerations in mind, we are here to help you make your task easier.
-        We have top professional report writers, engineers, and computing
-        professionals who have been offering quality assistance For DR
-        Reviewing, Resume Writing, RPL Writing, Plagiarism Checking, and Removal
-        services.
+      The term CPD refers to Continuing Professional Development, the process of recording, documenting, and tracking all of your skills, knowledge, and experience that you achieved formally or informally as you work beyond any initial training. CDP is a term used to describe a portfolio documenting your professional development. CPD Report Writing for Engineers Australia is also one of the crucial parts of the CDR writing for Engineers. It shows that the engineer is up to date with knowledge of developments in engineering.
       </p>
       <Row className="">
         <img
@@ -30,16 +15,10 @@ const ServicesForEngineers = () => {
           alt="Competency Demonstration Report"
         />
       </Row>
-      <PurpleHeading title="What is CDR? Need of Quality CDR Report." />
+      <PurpleHeading title="Want your CPD Report to get Accepted by Engineers Australia (EA)?" />
 
       <p className="cdrWritingP" style={{ textAlign: "center" }}>
-        Competency Demonstration Report,CDR report,is a technical report used by
-        engineers in Australia to evaluate applicants who want to further their
-        careers in engineering professions in Australia. Engineers Australia
-        assesses an engineer&apos;s competency-basedon various factors, including
-        engineering skills,knowledge, management, communication, and leadership.
-        Lookat the key considerations for writing a high-quality CDR report, as
-        per the guidelines by Engineers Australia (EA).
+      Renowned for the service we provide of CPD report writing in Australia, CDRXpert offers help preparing flawless CDR that Engineers Australia will assess at a reasonable price. Save your time and money by working with us as CdrXperts is the best CPD report writing service provider in Australia. 
       </p>
     </Container>
   );

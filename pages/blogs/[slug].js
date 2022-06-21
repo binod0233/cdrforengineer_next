@@ -8,14 +8,14 @@ import axios from 'axios'
 
 const SpecificBlog = () => {
   const router = useRouter()
-const slug = router.query.slug 
+const id = router.query.slug 
   // const [data,setData] = useState(dat)
   const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
   return (
     <div>
       <Head>
-        <title>{slug}</title>
-        <meta name='description' content={slug}/>
+        <title>{id}</title>
+        <meta name='description' content={id}/>
         <link rel="canonical" href={canonicalUrl} />
       </Head>
       <div
@@ -48,10 +48,3 @@ const slug = router.query.slug
 
 export default SpecificBlog;
 
-
-// export const getStaticProps = async () => {
-//   const dat = await axios.get(`https://cdrdashboardbackend.herokuapp.com/api/blogs?slug=${slug}`)
-//   return {
-//     props: {dat},
-//   };
-// };

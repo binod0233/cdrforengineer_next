@@ -24,10 +24,10 @@ const Hero = ({ title, details }) => {
 
     emailjs
       .sendForm(
-        "service_by37xbi",
-        "template_2xypi1o",
+        "service_zd7zc21",
+        "template_7rs4k0f",
         form.current,
-        "user_jMQ6BMrWWCP1zIKhDe4ND"
+        "UD1lBl5a6755saSKU"
       )
       .then(
         (result) => {
@@ -38,6 +38,7 @@ const Hero = ({ title, details }) => {
           setMessage("");
         },
         (error) => {
+          console.log(error)
           alert("Sorry something went wrong.");
         }
       );
@@ -61,7 +62,7 @@ const Hero = ({ title, details }) => {
 
                       border: "none",
                     }}
-                    onClick={()=>$crisp.push(['do', 'chat:open'])}
+                    onClick={() => Chatra("openChat", true)}
 
                   >
                     Chat with us
@@ -110,6 +111,15 @@ const Hero = ({ title, details }) => {
               <h2>Get Free Consultation</h2>
               <h6>Free Consultation from Experts</h6>
             </div>
+            <Form.Group className="mb-3" controlId="sitename" style={{display:"none"}}>
+              <Form.Control
+                placeholder="Site Name"
+                value="CDR For Engineer"
+                readOnly
+                className="inputField"
+                name="subject"
+              />
+            </Form.Group>
 
             <Form.Group className="mb-3" controlId="fullName">
               <Form.Control

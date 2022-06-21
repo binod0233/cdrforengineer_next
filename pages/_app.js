@@ -8,6 +8,20 @@ import Socials from "../components/Socials";
 import TakeMeToTop from "../components/TakeMeToTop";
 import TagManager from 'react-gtm-module'
 import { SSRProvider } from 'react-bootstrap';
+import Chatra from "@chatra/chatra";
+
+
+let config = {
+  setup: {
+    buttonSize: 75,
+    colors: {
+      buttonText: "#fff",
+      buttonBg: "#753CAD",
+    },
+  },
+  ID: "ZTYZqMe9wQecagf5z",
+};
+
 
 const tagManagerArgs = {
   gtmId: 'GTM-MH9PVKT'
@@ -24,17 +38,8 @@ function MyApp({ Component, pageProps }) {
     headScroll.current.scrollIntoView();
   }
   useEffect(()=>{
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "c4a45080-23cc-4284-aece-4734b2308d77";
-  
-    (function() {
-      var d = document;
-      var s = d.createElement("script"); 
-  
-      s.src = "https://client.crisp.chat/l.js";
-      s.async = 1;
-      d.getElementsByTagName("head")[0].appendChild(s);
-    })();
+    Chatra("init", config);
+Chatra("pageView");
   },[])
   return<SSRProvider>
     <div ref={headScroll}></div>

@@ -16,17 +16,17 @@ const ContactUsForm = () => {
 
     emailjs
     .sendForm(
-      "service_1id88yh",
-      "template_dgcdon2",
+      "service_zd7zc21",
+      "template_h562t3q",
       form.current,
-      "e8bqI-l1U0nY9GlSa"
+      "UD1lBl5a6755saSKU"
     )
       .then(
         (result) => {
-          alert(result.text);
+          alert("Email sent successfully!");
         },
         (error) => {
-          alert(error.text);
+          alert("There seems to be an error. Please try again later.");
         }
       );
   };
@@ -36,6 +36,15 @@ const ContactUsForm = () => {
       <Form ref={form} onSubmit={submitFormhandler} className="bg-white ">
         <Row>
           <Col xs={12} md={6}>
+          <Form.Group className="mb-3" controlId="fullName" style={{display:"none"}}>
+              <Form.Control
+                placeholder="Site Name"
+                value="CDR For Engineer"
+                readonly
+                className="inputField"
+                name="subject"
+              />
+            </Form.Group>
             <Form.Group className="mb-3" controlId="firstname">
               <Form.Label className="contactUsFormLabel">First Name</Form.Label>
               <Form.Control

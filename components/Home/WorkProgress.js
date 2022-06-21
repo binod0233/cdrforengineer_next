@@ -35,7 +35,7 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
           >
             <strong>
               Get Started <ArrowForwardRoundedIcon/>
@@ -61,7 +61,7 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
           >
             <strong>
               Get Started <ArrowForwardRoundedIcon/>
@@ -107,7 +107,7 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
           >
             <strong>
               Get Started <ArrowForwardRoundedIcon/>
@@ -131,7 +131,7 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={()=>$crisp.push(['do', 'chat:open'])}
+            onClick={() => Chatra("openChat", true)}
           >
             <strong>
               Get Started <ArrowForwardRoundedIcon/>
