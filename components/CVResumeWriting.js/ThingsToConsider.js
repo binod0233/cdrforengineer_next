@@ -54,8 +54,8 @@ const ThingsToConsider = () => {
     <Container>
       <PurpleHeading title="Things to consider while writing a best CDR CV Resume Report" />
       <Row className="py-4">
-        {contentList.map((c) => (
-          <>
+        {contentList.map((c,i) => (
+          <div key={i}>
             <strong
               className="thingsToConsiderTitle"
               style={{
@@ -74,7 +74,7 @@ const ThingsToConsider = () => {
             >
               {c.description}
             </p>
-          </>
+          </div>
         ))}
       </Row>
     </Container>

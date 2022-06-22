@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 import AustraliaGuarantees from "../../components/CDRWriting/AustraliaGuarantees";
 import CDRAssessmentsComponent from "../../components/CDRWriting/CDRAssessmentsComponent";
 import MoreServices from "../../components/CDRWriting/MoreServices";
-import ServicesForEngineers from "../../components/CDRWriting/ServicesForEngineers";
+import CDRReportWriting from "../../components/CDRWriting/CDRReportWriting";
 import Steps from "../../components/CDRWriting/Steps";
 import StepsBeforeHiring from "../../components/CDRWriting/StepsBeforeHiring";
 import CDRReportAccepted from "../../components/Home/CDRReportAccepted";
@@ -17,7 +17,7 @@ const CDRWriting = () => {
 
   return (
     <>
-      <Head>
+        <Head>
         <title>High-Quality CDR Report Writing Service for Engineers Australia</title>
         <meta name='description' content="Engineering Applicants seeking the best service provider for CDR Writing? Grab your high-quality CDR Report to get 100 % Approval from Engineers Australia."/>
         <link rel="canonical" href={canonicalUrl} />
@@ -29,7 +29,7 @@ Report Rejection"
         details="Get help from Our professional writers for 100 % Approval 
 CDR Report"
       />
-      <ServicesForEngineers />
+      <CDRReportWriting />
       <Steps
         tabItem={[
           {

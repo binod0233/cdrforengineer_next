@@ -54,8 +54,8 @@ Assessment. "
       <Container>
         <div className="d-flex justify-content-start align-items-center">
           <div style={{ flex: "0.8", display: "flex" }}>
-            {tabItem.map((t) => (
-              <div className="d-flex justify-content-center align-items-center ">
+            {tabItem.map((t,i) => (
+              <div key={i} className="d-flex justify-content-center align-items-center ">
                 <div
                   className="blogsTabsTitle"
                   style={{

@@ -27,8 +27,8 @@ const Stage2Standards = () => {
         family="Arial"
       />
       <Row>
-        {contentData.map((c) => (
-          <>
+        {contentData.map((c,i) => (
+          <div key={i}>
             <Col xs={1} md={1}>
               <div
                 style={{
@@ -61,7 +61,7 @@ const Stage2Standards = () => {
                 {c}
               </p>
             </Col>
-          </>
+          </div>
         ))}
       </Row>
       <TextParagraph
