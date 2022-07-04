@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 import AustraliaGuarantees from "../../components/CDRWriting/AustraliaGuarantees";
 import CDRAssessmentsComponent from "../../components/CDRWriting/CDRAssessmentsComponent";
 import MoreServices from "../../components/CDRWriting/MoreServices";
-import CDRReportWriting from "../../components/CDRWriting/CDRReportWriting";
+import CDRReportWriting from "../../components/CDRWriting/CdrReportWriting";
 import Steps from "../../components/CDRWriting/Steps";
 import StepsBeforeHiring from "../../components/CDRWriting/StepsBeforeHiring";
 import CDRReportAccepted from "../../components/Home/CDRReportAccepted";

@@ -50,25 +50,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               3 Career Episode
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+            
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -77,25 +78,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFBF2",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFBF2",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Summary Statement
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -104,25 +106,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
              CPD
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -131,17 +134,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFBF2",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFBF2",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Delivery Date
 
               </Col>
-              <Col>
-              15 Working Days
-
-              </Col>
+           
               
             </Row>
             <Row
@@ -151,25 +163,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Quality Assured
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -178,25 +191,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFBF2",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFBF2",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Plagiarism Free Reports
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
 
             <Row
@@ -206,25 +220,26 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Professional Writers
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -233,16 +248,53 @@ const FeaturesPricing = () => {
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFBF2",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFBF2",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               File Status Update
 
               </Col>
+              
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#EAA20F",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
-          Once a week via
-call/message
+              Handling Unlimited Contents
+
               </Col>
               
             </Row>
@@ -253,25 +305,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFBF2",
               }}
             >
-              <Col>
-              Handling Unlimited Contents
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#EAA20F",
+                background: "#FFFBF2",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Comments from EA
+
+              </Col>
+              
             </Row>
            
             <Row
@@ -281,162 +334,29 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
-              <Col>
-              Review Of Clients Projects
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#EAA20F",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+             
             </Row>
             
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-             EA Portal Upload
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Documentation Guideline Help
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Rewrite CE on EA comment
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Rewrite project on EA
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>          
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              3 Reports Inclusive
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
+            
            
             </div>
 
@@ -444,7 +364,7 @@ call/message
           <Button className='pricingViewFeaturesButton'
           onClick={()=>setFirstActive(!firstActive)}
           style={{color:"#fff",outline:"none",background:"#F9C967",fontWeight:"400",border:"#fff",width:'100%',marginTop:firstActive?"0px":'-50px',padding:'0'}}>
-            View Features<ExpandMoreRoundedIcon/>
+            View Features {firstActive?<ExpandLessRoundedIcon/>:<ExpandMoreRoundedIcon/>}
 
           </Button>
          </Col>
@@ -470,9 +390,10 @@ call/message
               <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
             </div>
             <div
-              className="px-3 mt-4"
+              className="pt-4 px-3"
               style={{ display: secondActive ? "block" : "none" }}
             >
+              
               <Row
               className="d-flex align-items-center "
               style={{
@@ -480,25 +401,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               3 Career Episode
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+            
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -507,25 +429,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#CBFBFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#CBFBFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Summary Statement
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -534,25 +457,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
              CPD
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -561,17 +485,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#CBFBFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#CBFBFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Delivery Date
 
               </Col>
-              <Col>
-              10 Working Days
-
-              </Col>
+           
               
             </Row>
             <Row
@@ -581,25 +514,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Quality Assured
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -608,25 +542,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#CBFBFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#CBFBFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Plagiarism Free Reports
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
 
             <Row
@@ -636,25 +571,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Professional Writers
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -663,16 +599,53 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#CBFBFF",
               }}
             >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#CBFBFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               File Status Update
 
               </Col>
+              
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#3D9AA1",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
-              Twice  a week via
-call/message
+              Handling Unlimited Contents
+
               </Col>
               
             </Row>
@@ -683,25 +656,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#CBFBFF",
               }}
             >
-              <Col>
-              Handling Unlimited Contents
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#3D9AA1",
+                background: "#CBFBFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Comments from EA
+
+              </Col>
+              
             </Row>
            
             <Row
@@ -711,162 +685,29 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
-              <Col>
-              Review Of Clients Projects
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+                 <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#3D9AA1",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+             
             </Row>
             
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-             EA Portal Upload
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Documentstion Guideline Help
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Rewrite any CE upon EA comment
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Rewrite any project upon EA comment
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>          
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              3 Reports Inclusive
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
+            
            
             </div>
           </div>
@@ -875,7 +716,7 @@ call/message
           <Button 
           onClick={()=>setSecondActive(!secondActive)}
           style={{color:"#fff",outline:"none",background:"#76D3DA",fontWeight:"400",border:"#fff",width:'100%',marginTop:secondActive?"0":'-50px',padding:'0'}}>
-            View Features<ExpandMoreRoundedIcon/>
+            View Features{secondActive?<ExpandLessRoundedIcon/>:<ExpandMoreRoundedIcon/>}
 
           </Button>
          </Col>
@@ -912,25 +753,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               3 Career Episode
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -939,25 +781,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFE3E3",
               }}
             >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFE3E3",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Summary Statement
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -966,174 +809,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
              CPD
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Delivery Date
-
-              </Col>
-              <Col>
-              7 Working Days
-
-              </Col>
-              
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Quality Assured
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Plagiarism Free Reports
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Professional Writers
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              File Status Update
-
-              </Col>
-              <Col>
-              Daily in a week via
-call/message
-              </Col>
-              
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Handling Unlimited Contents
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
            
             <Row
@@ -1143,25 +838,197 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFE3E3",
               }}
             >
-              <Col>
-              Review Of Clients Projects
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#D63E3E",
+                background: "#FFE3E3",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Quality Assured
+
+              </Col>
+             
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Plagiarism Free Reports
+
+              </Col>
+             
+            </Row>
+
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFE3E3",
+              }}
+            >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFE3E3",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Professional Writers
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              File Status Update
+
+              </Col>
+              
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFE3E3",
+              }}
+            >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFE3E3",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Handling Unlimited Contents
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Comments from EA
+
+              </Col>
+              
+            </Row>
+           
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFE3E3",
+              }}
+            >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFE3E3",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+              
             </Row>
             
             <Row
@@ -1171,25 +1038,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
              EA Portal Upload
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -1198,114 +1066,35 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFE3E3",
               }}
             >
+              <Col md={2}
+              className="ms-3 d-flex justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#D63E3E",
+                background: "#FFE3E3",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Documentation Guideline Help
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Rewrite CE on EA comment
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Rewrite on EA comment
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>          
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              3 Reports Inclusive
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#FA2545",
-                background: "#F9F9F9",
-              }}
-            >
-              <CloseIcon/>
-            </Col>
-            </Row>
+           
             </div>
 
           </div>
           <Button 
           onClick={()=>setThirdActive(!thirdActive)}
           style={{color:"#fff",outline:"none",background:"#EB6D6D",fontWeight:"400",border:"#fff",width:'100%',marginTop:thirdActive?"0px":'-50px',padding:'0'}}>
-            View Features<ExpandMoreRoundedIcon/>
+            View Features{thirdActive?<ExpandLessRoundedIcon/>:<ExpandMoreRoundedIcon/>}
 
           </Button>
          </Col>
@@ -1341,25 +1130,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+               <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               3 Career Episode
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -1368,179 +1158,24 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#F5EAFF",
               }}
             >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#F5EAFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Summary Statement
 
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-             CPD
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Delivery Date
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Quality Assured
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Plagiarism Free Reports
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              Professional Writers
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
-            </Row>
-            <Row
-              className="d-flex align-items-center "
-              style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                lineHeight: "18px",
-                height: "50px",
-                background: "#F9F9F9",
-              }}
-            >
-              <Col>
-              File Status Update
-
-              </Col>
-              <Col>
-              Daily in a week via
-call/message
               </Col>
               
             </Row>
@@ -1551,25 +1186,196 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
-              <Col>
-              Handling Unlimited Contents
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#2D2046",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+             CPD
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F5EAFF",
+              }}
+            >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#F5EAFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Delivery Date
+
+              </Col>
+            
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Quality Assured
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F5EAFF",
+              }}
+            >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#F5EAFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Plagiarism Free Reports
+
+              </Col>
+              
+            </Row>
+
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Professional Writers
+
+              </Col>
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#F5EAFF",
+              }}
+            >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#F5EAFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              File Status Update
+
+              </Col>
+              
+              
+            </Row>
+            <Row
+              className="d-flex align-items-center "
+              style={{
+                fontWeight: "500",
+                fontSize: "16px",
+                lineHeight: "18px",
+                height: "50px",
+                background: "#FFFFFF",
+              }}
+            >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
+              <Col>
+              Handling Unlimited Contents
+
+              </Col>
+              
             </Row>
            
             <Row
@@ -1579,25 +1385,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#F5EAFF",
               }}
             >
-              <Col>
-              Review Of Clients Projects
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#2D2046",
+                background: "#F5EAFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Review Of Clients Projects
+
+              </Col>
+              
             </Row>
             
             <Row
@@ -1607,25 +1414,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
              EA Portal Upload
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+             
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -1634,25 +1442,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#F5EAFF",
               }}
             >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#F5EAFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
-              Documentstion Guideline Help
+              Documentation Guideline Help
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+              
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -1661,25 +1470,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                height: "50px",
+                color: "#2D2046",
+                background: "#FFFFFF",
+              }}
+            >
+              <CheckIcon/>
+            </Col>
               <Col>
               Rewrite CE on EA comment
 
               </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
-              style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
-              }}
-            >
-              <CheckIcon/>
-            </Col>
+            
             </Row>
             <Row
               className="d-flex align-items-center "
@@ -1688,25 +1498,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#F5EAFF",
               }}
             >
-              <Col>
-              Rewrite project on EA comment
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#2D2046",
+                background: "#F5EAFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              Rewrite project on EA comment
+
+              </Col>
+              
             </Row>          
             <Row
               className="d-flex align-items-center "
@@ -1715,25 +1526,26 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
-              <Col>
-              3 Reports Inclusive
-
-              </Col>
-              <Col
-              className="d-flex justify-content-center align-items-center text-center px-3"
+              <Col md={2}
+              className="d-flex ms-3 justify-content-center align-items-center text-center px-3"
               style={{
                 fontSize: "20px",
                 fontWeight: "700",
                 height: "50px",
-                color: "#0EAF00",
-                background: "#F9F9F9",
+                color: "#2D2046",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
             </Col>
+              <Col>
+              3 Reports Inclusive
+
+              </Col>
+             
             </Row>
             </div>
 
@@ -1741,7 +1553,7 @@ call/message
           <Button 
           onClick={()=>setFourthActive(!fourthActive)}
           style={{color:"#fff",outline:"none",background:"#6A2DA7",fontWeight:"400",border:"#fff",width:'100%',marginTop:fourthActive?"0px":'-50px',padding:'0'}}>
-            View Features<ExpandMoreRoundedIcon/>
+            View Features{fourthActive?<ExpandLessRoundedIcon/>:<ExpandMoreRoundedIcon/>}
 
           </Button>
          </Col>
@@ -1814,7 +1626,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1828,7 +1640,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -1841,7 +1653,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1855,7 +1667,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -1868,7 +1680,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1882,7 +1694,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -1895,7 +1707,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1915,7 +1727,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1929,7 +1741,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -1942,7 +1754,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1956,7 +1768,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -1970,7 +1782,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -1984,7 +1796,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -1997,7 +1809,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2017,7 +1829,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2031,7 +1843,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2045,7 +1857,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2059,7 +1871,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2073,7 +1885,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2087,7 +1899,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2100,7 +1912,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2114,7 +1926,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2127,7 +1939,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2141,7 +1953,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2154,7 +1966,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2168,7 +1980,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2181,7 +1993,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2195,7 +2007,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2208,7 +2020,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2301,7 +2113,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2315,7 +2127,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2328,7 +2140,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2342,7 +2154,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2355,7 +2167,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2369,7 +2181,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2382,7 +2194,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2402,7 +2214,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2416,7 +2228,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2429,7 +2241,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2443,7 +2255,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2457,7 +2269,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2471,7 +2283,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2484,7 +2296,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2504,7 +2316,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2518,7 +2330,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2532,7 +2344,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2546,7 +2358,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2560,7 +2372,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2574,7 +2386,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2587,7 +2399,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2601,7 +2413,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2614,7 +2426,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2628,7 +2440,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2641,7 +2453,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2655,7 +2467,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2668,7 +2480,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2682,7 +2494,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -2695,7 +2507,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2791,7 +2603,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2805,7 +2617,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2818,7 +2630,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2832,7 +2644,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2845,7 +2657,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2859,7 +2671,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2872,7 +2684,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2892,7 +2704,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2906,7 +2718,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2919,7 +2731,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2933,7 +2745,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2947,7 +2759,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2961,7 +2773,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -2974,7 +2786,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -2994,7 +2806,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3008,7 +2820,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3022,7 +2834,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3036,7 +2848,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3050,7 +2862,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3064,7 +2876,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3077,7 +2889,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3091,7 +2903,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3104,7 +2916,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3118,7 +2930,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -3131,7 +2943,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3145,7 +2957,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -3158,7 +2970,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3172,7 +2984,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#FA2545",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CloseIcon/>
@@ -3185,7 +2997,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3288,7 +3100,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3302,7 +3114,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3315,7 +3127,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3329,7 +3141,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3342,7 +3154,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3356,7 +3168,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3369,7 +3181,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3383,7 +3195,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3396,7 +3208,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3410,7 +3222,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3423,7 +3235,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3437,7 +3249,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3451,7 +3263,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3465,7 +3277,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3478,7 +3290,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3498,7 +3310,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3512,7 +3324,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3526,7 +3338,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3540,7 +3352,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3554,7 +3366,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3568,7 +3380,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3581,7 +3393,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3595,7 +3407,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3608,7 +3420,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3622,7 +3434,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3635,7 +3447,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3649,7 +3461,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3662,7 +3474,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
@@ -3676,7 +3488,7 @@ call/message
                 fontWeight: "700",
                 height: "50px",
                 color: "#0EAF00",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <CheckIcon/>
@@ -3689,7 +3501,7 @@ call/message
                 fontSize: "16px",
                 lineHeight: "18px",
                 height: "50px",
-                background: "#F9F9F9",
+                background: "#FFFFFF",
               }}
             >
               <Col>
