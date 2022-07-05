@@ -27,10 +27,12 @@ const TakeHelp = () => {
             color: "white",
             border: "none",
           }}
-          onClick={() => Chatra("openChat", true)}
+          // onClick={() => Chatra("openChat", true)}
 
         >
-          Talk to our Experts
+          <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+          Talk to our Experts</a></div>
+          {/* Talk to our Experts */}
         </Button>
       </Row>
       <Row>

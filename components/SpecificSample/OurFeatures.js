@@ -1,11 +1,13 @@
-import Chatra from "@chatra/chatra";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import PhoneInput from "react-phone-number-input";
 import PurpleHeading from "../PurpleHeading";
 import TextParagraph from "../TextParagraph";
+import emailjs from "@emailjs/browser";
 
 const OurFeatures = () => {
+  const form = useRef();
+
   const features = [
     { image: "/images/SpecificSample/1.png", details: "Delivery Before Deadline" },
     { image: "/images/SpecificSample/6.png", details: "Affordable Price" },
@@ -23,7 +25,26 @@ const OurFeatures = () => {
 
   const submitFormhandler = (e) => {
     e.preventDefault();
-    Chatra("openChat", true);
+
+    emailjs
+    .sendForm(
+      "service_zd7zc21",
+      "template_7rs4k0f",
+      form.current,
+      "UD1lBl5a6755saSKU"
+    )
+    .then(
+      (result) => {
+        alert("Email sent.");
+        setFullName("");
+        setEmail("");
+        setPhone("");
+      },
+      (error) => {
+        console.log(error)
+        alert("Sorry something went wrong.");
+      }
+    );
   };
   return (
     <Container>
@@ -62,6 +83,8 @@ the features that we have:"/>
         <Col md={4} className="py-md-4 ">
           <div className="ourFeaturesCard">
             <Form
+                        ref={form}
+
               onSubmit={submitFormhandler}
               className="bg-white p-4 mt-md-4 formContainer"
             >

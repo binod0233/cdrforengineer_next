@@ -27,10 +27,12 @@ to assist you."
             className="formSubmitButton"
             variant="primary"
             type="submit"
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
 
           >
-            Contact Us
+<div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+Contact Us</a></div>
+            {/* Contact Us */}
           </Button>
         </Col>
         <Col md={7}>

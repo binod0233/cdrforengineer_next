@@ -35,11 +35,15 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
           >
-            <strong>
+             <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <strong>
               Get Started <ArrowForwardRoundedIcon/>
-            </strong>
+            </strong></a></div>
+            {/* <strong>
+              Get Started <ArrowForwardRoundedIcon/>
+            </strong> */}
           </p>
         </Col>
       </Row>
@@ -61,11 +65,15 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
           >
-            <strong>
+              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <strong>
               Get Started <ArrowForwardRoundedIcon/>
-            </strong>
+            </strong></a></div>
+            {/* <strong>
+              Get Started <ArrowForwardRoundedIcon/>
+            </strong> */}
           </p>
         </Col>
         <Col xs={6}>
@@ -107,11 +115,15 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
           >
-            <strong>
+              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <strong>
               Get Started <ArrowForwardRoundedIcon/>
-            </strong>
+            </strong></a></div>
+            {/* <strong>
+              Get Started <ArrowForwardRoundedIcon/>
+            </strong> */}
           </p>
         </Col>
       </Row>
@@ -131,11 +143,15 @@ const WorkProgress = () => {
               color: "#3E106D",
               cursor: "pointer",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
           >
-            <strong>
+              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <strong>
               Get Started <ArrowForwardRoundedIcon/>
-            </strong>
+            </strong></a></div>
+            {/* <strong>
+              Get Started <ArrowForwardRoundedIcon/>
+            </strong> */}
           </p>
         </Col>
         <Col xs={6}>

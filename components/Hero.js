@@ -62,10 +62,12 @@ const Hero = ({ title, details }) => {
 
                       border: "none",
                     }}
-                    onClick={() => Chatra("openChat", true)}
+                    // onClick={() => Chatra("openChat", true)}
 
                   >
-                    Chat with us
+                    <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                      Chat with us</a></div>
+                    {/* Chat with us */}
                   </Button>
                   <Button
                     style={{

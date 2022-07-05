@@ -35,9 +35,9 @@ const CDRReportAccepted = ({ title, data, buttonName, contentBelow, link }) => {
             }}
             onClick={() => {
               if (link) router.push(link);
-              else {
-                 Chatra("openChat", true)
-              }
+              // else {
+              //    Chatra("openChat", true)
+              // }
             }}
           >
             {buttonName}

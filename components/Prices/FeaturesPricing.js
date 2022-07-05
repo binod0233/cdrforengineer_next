@@ -5,7 +5,6 @@ import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
-import { useRouter } from "next/router";
 
 const FeaturesPricing = () => {
   const [firstActive, setFirstActive] = useState(false);
@@ -13,7 +12,6 @@ const FeaturesPricing = () => {
   const [thirdActive, setThirdActive] = useState(false);
   const [fourthActive, setFourthActive] = useState(false);
 
-  const router = useRouter()
   return (
     <Container className="mb-5">
        <Row className='displayDesktopScreen'>
@@ -34,9 +32,13 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 14 Days</p>
 
             </div>
-            <div              onClick={() => Chatra("openChat", true)}
+            <div            
+              // onClick={() => Chatra("openChat", true)}
  className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#FFAD05',marginBottom:'-20px',cursor:'pointer'}}>
-              <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+             <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+</a></div>
+              {/* <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p> */}
             </div>
             <div
               className="pt-4 px-3"
@@ -385,9 +387,13 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 10 Days</p>
 
             </div>
-            <div              onClick={() => Chatra("openChat", true)}
+            <div            
+              // onClick={() => Chatra("openChat", true)}
  className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#3D9AA1',marginBottom:'-20px', cursor:'pointer'}}>
-              <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+               <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+</a></div>
+              {/* <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p> */}
             </div>
             <div
               className="pt-4 px-3"
@@ -737,9 +743,14 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 7 Days</p>
 
             </div>
-            <div              onClick={() => Chatra("openChat", true)}
+            <div             
+            //  onClick={() => Chatra("openChat", true)}
  className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#D63E3E',marginBottom:'-20px',cursor:'pointer'}}>
-              <p style={{color:'white',fontSize:"20px",fontWeight:'700',}}>Order Now</p>
+           
+           <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+</a></div>
+   {/* <p style={{color:'white',fontSize:"20px",fontWeight:'700',}}>Order Now</p> */}
              
             </div>
             <div
@@ -1115,9 +1126,13 @@ const FeaturesPricing = () => {
               <p style={{color:"#787878",fontWeight:"700",textAlign:"center",paddingBottom:'50px',fontSize:'18px'}}>Delivered within 5 Days</p>
 
             </div>
-            <div              onClick={() => Chatra("openChat", true)}
+            <div           
+              //  onClick={() => Chatra("openChat", true)}
  className='d-flex justify-content-center align-items-center orderNowButton' style={{height:'15%',background:'#40116F',marginBottom:'-20px',cursor:'pointer'}}>
-              <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+               <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+             <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p>
+</a></div>
+              {/* <p style={{color:'white',fontSize:"20px",fontWeight:'700'}}>Order Now</p> */}
             </div>
             <div
               className="px-3 mt-4"
@@ -2038,10 +2053,14 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
 
           >
-            Order Now
+              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+              Order Now
+
+</a></div>
+            {/* Order Now */}
           </div>
             </Col>
             </Row>
@@ -2525,10 +2544,14 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
 
           >
-            Order Now
+             <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+              Order Now
+
+</a></div>
+            {/* Order Now */}
           </div>
 
             </Col>
@@ -3015,10 +3038,14 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
 
           >
-            Order Now
+              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+              Order Now
+
+</a></div>
+            {/* Order Now */}
           </div>
             </Col>
             </Row>
@@ -3519,9 +3546,13 @@ call/message
               cursor: "pointer",
               flex: "0.2",
             }}
-            onClick={() => Chatra("openChat", true)}
+            // onClick={() => Chatra("openChat", true)}
           >
-            Order Now
+              <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+              Order Now
+
+</a></div>
+            {/* Order Now */}
           </div>
             </Col>
             </Row>
