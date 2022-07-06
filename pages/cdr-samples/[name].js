@@ -12,7 +12,7 @@ import CheckIcon from '@mui/icons-material/Check';
 const SpecificSample = () => {
   const router = useRouter()
   const name = router.query.name
-  const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
 
   const allSamples = {
     engineeringManager: {

@@ -9,7 +9,7 @@ import Hero from "../../components/Hero";
 
 const CDRPlagarismCheckingAndRemoval = () => {
   const router = useRouter()
-  const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
 
   return (
     <div>

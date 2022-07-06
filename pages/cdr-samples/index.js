@@ -12,7 +12,7 @@ import WhyRely from "../../components/Samples/WhyRely";
 const Samples = () => {
   const router = useRouter()
 
-  const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
 
   return (
     <div>

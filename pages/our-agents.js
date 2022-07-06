@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const OurAgents = () => {
   const router = useRouter()
-  const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
 
   const agents = [
     {name:"Sirja Ksetri",image:"/images/ourAgents/1.png",facebookLink:"https://www.facebook.com/profile.php?id=100080927829387",linkedInLink:"",instagramLink:"",phone:"61482072510"},

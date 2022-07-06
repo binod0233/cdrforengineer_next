@@ -10,7 +10,7 @@ const SpecificBlog = () => {
   const router = useRouter()
 const id = router.query.slug 
   // const [data,setData] = useState(dat)
-  const canonicalUrl = (`https://cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
   return (
     <div>
       <Head>
