@@ -12,10 +12,10 @@ const OurAgents = () => {
 
   const agents = [
     {name:"Sirja Ksetri",image:"/images/ourAgents/1.png",facebookLink:"https://www.facebook.com/profile.php?id=100080927829387",linkedInLink:"",instagramLink:"",phone:"61482072510"},
-  {name:"Binu Ksetri",image:"/images/ourAgents/2.png",facebookLink:"https://www.facebook.com/profile.php?id=100082172346949",linkedInLink:"https://www.linkedin.com/in/binu-mishra-103168241/",instagramLink:"https://www.instagram.com/binu.cdrforengineer/",phone:"61482070864"},
-  {name:"Adhira Ksetri",image:"/images/ourAgents/3.png",facebookLink:"https://www.facebook.com/profile.php?id=100080942528620",linkedInLink:"https://www.linkedin.com/in/adhira-mahajan-/",instagramLink:"https://www.instagram.com/cdr_with_adhira/",phone:"61482070521"},
-  {name:"Maira Ksetri",image:"/images/ourAgents/4.png",facebookLink:"https://www.facebook.com/profile.php?id=100080996556778",linkedInLink:"https://www.linkedin.com/in/maira-thapa-536259241/",instagramLink:"https://www.instagram.com/cdr_with_maira/",phone:"61482072733"},
-  {name:"Samaira Ksetri",image:"/images/ourAgents/5.png",facebookLink:"https://www.facebook.com/profile.php?id=100080772975496",linkedInLink:"https://www.linkedin.com/in/samaira-singh-a790b1241/",instagramLink:"https://www.instagram.com/samaira.cdrforengineer/",phone:"61482071295"},];
+  {name:"Binu Mishra",image:"/images/ourAgents/2.png",facebookLink:"https://www.facebook.com/profile.php?id=100082172346949",linkedInLink:"https://www.linkedin.com/in/binu-mishra-103168241/",instagramLink:"https://www.instagram.com/binu.cdrforengineer/",phone:"61482070864"},
+  {name:"Adhira Maharjan",image:"/images/ourAgents/3.png",facebookLink:"https://www.facebook.com/profile.php?id=100080942528620",linkedInLink:"https://www.linkedin.com/in/adhira-mahajan-/",instagramLink:"https://www.instagram.com/cdr_with_adhira/",phone:"61482070521"},
+  {name:"Maira Thapa",image:"/images/ourAgents/4.png",facebookLink:"https://www.facebook.com/profile.php?id=100080996556778",linkedInLink:"https://www.linkedin.com/in/maira-thapa-536259241/",instagramLink:"https://www.instagram.com/cdr_with_maira/",phone:"61482072733"},
+  {name:"Samaira Singh",image:"/images/ourAgents/5.png",facebookLink:"https://www.facebook.com/profile.php?id=100080772975496",linkedInLink:"https://www.linkedin.com/in/samaira-singh-a790b1241/",instagramLink:"https://www.instagram.com/samaira.cdrforengineer/",phone:"61482071295"},];
   return (
     <div>
       
