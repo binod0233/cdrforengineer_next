@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Link from 'next/link'
-import {useRouter} from 'next/router'
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container,  Button } from "react-bootstrap";
+import { Container, Button, Row, Col } from "react-bootstrap";
 import Hero from "../../components/Hero";
 import PurpleHeading from "../../components/PurpleHeading";
 import SearchBox from "../../components/Samples/SearchBox";
@@ -11,12 +11,13 @@ import axios from "axios";
 
 const Blogs = () => {
   const router = useRouter();
-  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (
+    `https://www.cdrforengineer.com` +
+    (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
   const [data, setData] = useState([]);
- 
-  const searchBlogs = () =>{
 
-  }
+  const searchBlogs = () => {};
 
   const tabItem = [
     "All Blogs",
@@ -25,22 +26,23 @@ const Blogs = () => {
     "Australian Migration",
     "CDR Service",
   ];
-  const changeTab = async(title) => {
-      axios
-        .get(
-          `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer?type=${title}`
-        )
-        .then((res) => setData(res.data.blog));
-    };
+  const changeTab = async (title) => {
+    axios
+      .get(
+        `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer?type=${title}`
+      )
+      .then((res) => setData(res.data.blog));
+  };
 
   return (
     <div>
-      
-     <Head>
+      <Head>
         <title>Blogs | CDR For Engineer</title>
-        <meta name='description' content="Articles on and about cdr with cdrforengineer | CDR For Engineer"/>
+        <meta
+          name="description"
+          content="Articles on and about cdr with cdrforengineer | CDR For Engineer"
+        />
         <link rel="canonical" href={canonicalUrl} />
-
       </Head>
 
       <Hero
@@ -54,8 +56,11 @@ Assessment. "
       <Container>
         <div className="d-flex justify-content-start align-items-center">
           <div style={{ flex: "0.8", display: "flex" }}>
-            {tabItem.map((t,i) => (
-              <div key={i} className="d-flex justify-content-center align-items-center ">
+            {tabItem.map((t, i) => (
+              <div
+                key={i}
+                className="d-flex justify-content-center align-items-center "
+              >
                 <div
                   className="blogsTabsTitle"
                   style={{
@@ -84,7 +89,7 @@ Assessment. "
             />
           </div>
         </div>
-        {/* <Row className="mt-5 ">
+        <Row className="mt-5 ">
           {data.map((a, index) => {
             return (
               <Col key={index} md={6} xs={12} className="px-5 py-3">
@@ -199,7 +204,7 @@ Assessment. "
               </Col>
             );
           })}
-        </Row> */}
+        </Row>
       </Container>
 
       <div className="px-5" style={{ background: "#F8F8F8" }}>
@@ -232,14 +237,12 @@ CDRReportWriters offers high-quality service at an affordable price to ensure co
 
 export default Blogs;
 
-
-export const getStaticProps = async() =>{
-  
+export const getStaticProps = async () => {
   const dat = axios.get(
     `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer`
-  )
-  
+  );
+
   return {
-    props: {dat:[]}
-  }
-}
+    props: { dat: [] },
+  };
+};
