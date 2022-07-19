@@ -5119,9 +5119,9 @@ to avoid possible rejections."
 };
 
 export async function getStaticPaths() {
-  const samples = await fetch(
-    "https://cdrskill.herokuapp.com/api/cdrsamples?populate=deep"
-  );
+  const { NEXT_STRAPI_API_URL } = process.env;
+
+  const samples = await fetch(NEXT_STRAPI_API_URL + "cdrsamples?populate=deep");
   const allSamples = await samples.json();
   return {
     paths: allSamples.data.map((sample) => ({
@@ -5134,8 +5134,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const { NEXT_STRAPI_API_URL } = process.env;
+
   const sample = await fetch(
-    `https://cdrskill.herokuapp.com/api/cdrsamples/${params.name}?populate=deep`
+    NEXT_STRAPI_API_URL + `cdrsamples/${params.name}?populate=deep`
   );
   const sampleData = await sample.json();
 
