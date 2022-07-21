@@ -1,25 +1,25 @@
-import Head from 'next/head'
-import OurReports from '../components/Home/OurReports'
-import CDRReport from '../components/Home/CDRReport'
-import EngineersTakeHelp from '../components/Home/EngineersTakeHelp'
-import FrequentlyAsked from '../components/Home/FrequentlyAsked'
-import GetYourCDR from '../components/Home/GetYourCDR'
-import Hero from "../components/Hero"
-import {useRouter} from 'next/router'
-
-
+import Head from "next/head";
+import OurReports from "../components/Home/OurReports";
+import CDRReport from "../components/Home/CDRReport";
+import EngineersTakeHelp from "../components/Home/EngineersTakeHelp";
+import FrequentlyAsked from "../components/Home/FrequentlyAsked";
+import GetYourCDR from "../components/Home/GetYourCDR";
+import Hero from "../components/Hero";
+import { useRouter } from "next/router";
 
 export default function Home() {
-  const router = useRouter()
-  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const router = useRouter();
+  const canonicalUrl = (
+    `https://www.cdrforengineer.com` +
+    (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
 
   return (
-    <div >
+    <div>
       <Head>
         <title>CDR For Engineer</title>
         <meta name="description" content="A CDR For Engineer website" />
         <link rel="canonical" href={canonicalUrl} />
-
       </Head>
 
       <Hero
@@ -29,13 +29,12 @@ export default function Home() {
         of approval by Engineers Australia. We guarantee high-quality CDR reports with original and 
         plagiarism-free content."
       />
-     <OurReports />
+      <OurReports />
       <CDRReport />
       <EngineersTakeHelp />
 
       <FrequentlyAsked />
       <GetYourCDR />
-      
     </div>
-  )
+  );
 }

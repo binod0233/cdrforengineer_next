@@ -4145,7 +4145,7 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
     },
   };
   const resSampleData = sampleData?.data;
-  console.log("sameple", sampleData);
+  console.log("sameple", resSampleData);
 
   return (
     <div>
@@ -5111,7 +5111,39 @@ to avoid possible rejections."
         </>
       ) : (
         <>
-          <h1>hello</h1>
+          <Hero
+            title="Engineers Australia approved 
+CDR samples for Engineers."
+            details="Your professional assistance for CDR report in Migration Skills 
+Assessment from Engineers Australia. Speak with our experts 
+to avoid possible rejections."
+          />
+
+          <>
+            <CDRSample
+              title={resSampleData?.attributes?.content?.title}
+              titleDetails={resSampleData?.attributes?.content?.paragraph}
+              // image={resSampleData.engineeringManager.image}
+              secondTitle={resSampleData.attributes?.title1}
+              secondTitleSecond={resSampleData?.attributes?.title2}
+              secondTitleSecondDetails={resSampleData?.attribures?.paragraph}
+            />
+            {/* <Steps tabItem={resSampleData.engineeringManager.steps} />
+            <ReportSamples
+              fancySteps={resSampleData.engineeringManager.fancySteps}
+            /> */}
+          </>
+
+          <CDRReportAccepted
+            title="We are always here to assist you!
+        Feel free to contact our friendly team of writers with any questions you have.
+        "
+            buttonName="Get and Agent to Consult"
+            daata="We are always here to assist you!
+        Feel free to contact our friendly team of writers with any questions you have.
+        "
+          />
+          <OurFeatures />
         </>
       )}
     </div>
@@ -5137,7 +5169,7 @@ export async function getStaticProps({ params }) {
   const { NEXT_STRAPI_API_URL } = process.env;
 
   const sample = await fetch(
-    NEXT_STRAPI_API_URL + `cdrsamples/${params.name}?populate=deep`
+    `${NEXT_STRAPI_API_URL}cdrsamples/${params.name}?populate=deep`
   );
   const sampleData = await sample.json();
 
