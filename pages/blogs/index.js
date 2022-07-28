@@ -1,245 +1,407 @@
 import React, { useState } from "react";
-import Link from 'next/link'
-import {useRouter} from 'next/router'
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container,  Button } from "react-bootstrap";
-import Hero from "../../components/Hero";
-import PurpleHeading from "../../components/PurpleHeading";
-import SearchBox from "../../components/Samples/SearchBox";
-import TextParagraph from "../../components/TextParagraph";
-import axios from "axios";
+import {
+  Container,
+  Button,
+  Row,
+  Col,
+  Stack,
+  Pagination,
+  Form,
+  Nav,
+  ToggleButton,
+  Figure,
+} from "react-bootstrap";
 
-const Blogs = () => {
-  const router = useRouter();
-  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
-  const [data, setData] = useState([]);
- 
-  const searchBlogs = () =>{
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+import moment from "moment";
+import BlogCard from "../../components/Blog/BlogCard";
+import SearchIcon from "@mui/icons-material/Search";
 
+const getBlogs = async (key) => {
+  const keyValue = key.queryKey[1].titleSlug;
+  if (keyValue) {
+    keyValue === 1 ? keyValue : keyValue * 3;
+    const res = await fetch(
+      `https://cdrskill.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=${keyValue}&pagination[limit]=3&populate=deep`
+    );
+    const data = await res.json();
+    console.log();
+    return data;
   }
+  const res = await fetch(
+    "https://cdrskill.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=3&populate=deep"
+  );
+  const data = await res.json();
+  console.log();
+  return data;
+};
 
-  const tabItem = [
-    "All Blogs",
-    "Recent Blogs",
-    "Skills Assessment",
-    "Australian Migration",
-    "CDR Service",
-  ];
-  const changeTab = async(title) => {
-      axios
-        .get(
-          `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer?type=${title}`
-        )
-        .then((res) => setData(res.data.blog));
-    };
+const Blogs = ({ rdata }) => {
+  const [checked, setChecked] = useState(false);
+  const [pData, setpData] = useState(1);
+  const router = useRouter();
+  const canonicalUrl = (
+    `https://www.cdrforengineer.com` +
+    (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
+  const queryClient = useQueryClient();
+  const { data, status } = useQuery(["blogs", { titleSlug: pData }], getBlogs, {
+    initialData: rdata,
+    keepPreviousData: true,
+  });
+  console.log();
+  let active = pData;
+  let items = [];
+  for (let number = 1; number <= 4; number++) {
+    items.push(
+      <Pagination.Item
+        key={number}
+        active={number === active}
+        onClick={() => setpData(number)}
+        className=" mx-1 rounded-circle"
+      >
+        {number}
+      </Pagination.Item>
+    );
+  }
 
   return (
     <div>
-      
-     <Head>
-        <title>Blogs | CDR For Engineer</title>
-        <meta name='description' content="Articles on and about cdr with cdrforengineer | CDR For Engineer"/>
-        <link rel="canonical" href={canonicalUrl} />
+      <>
+        {/* <Head>
+          <title>Blogs | CDR For Engineer</title>
+          <meta
+            name="description"
+            content="Articles on and about cdr with cdrforengineer | CDR For Engineer"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head> */}
+      </>
 
-      </Head>
+      <div
+        style={{
+          background:
+            "linear-gradient(90deg, #60269E 0%, #4C1980 35.73%, #360B62 100%)",
+        }}
+      >
+        <Container>
+          <Stack gap={1} style={{ color: "white" }}>
+            <div>
+              <h1 className="my-5 "> CDRforengineer Blogs</h1>
+            </div>
+            <div className="pb-5">Home/blog</div>
+          </Stack>
+        </Container>
+      </div>
 
-      <Hero
-        title="Check our Blogs written by
-Experienced Bloggers
-"
-        details="Blogs related to CDR Service, Australia Migration & Skill
-Assessment. "
-      />
-      <PurpleHeading title="Home / Blogs" />
       <Container>
-        <div className="d-flex justify-content-start align-items-center">
-          <div style={{ flex: "0.8", display: "flex" }}>
-            {tabItem.map((t,i) => (
-              <div key={i} className="d-flex justify-content-center align-items-center ">
-                <div
-                  className="blogsTabsTitle"
-                  style={{
-                    color: "#370C64",
-                    fontWeight: "700",
-                    fontSize: "18px",
-                    minWidth: "fit-content",
-                    maxWidth: "200px",
-                    padding: "5px 12px",
-                  }}
-                  onClick={(e) => changeTab(t)}
-                >
-                  {t}
-                </div>
-              </div>
-            ))}
+        <hr className="bg-white border-2 border-top border-danger" />
+        <div className="d-flex bd-highlight mb-3 flex-wrap">
+          <div className="p-2 bd-highlight allblog">
+            <Button
+              style={{
+                color: "#370C64",
+                backgroundColor: "white",
+                border: "none",
+              }}
+            >
+              All Blogs
+            </Button>
           </div>
+          <div className="p-2 bd-highlight ">
+            <Button
+              style={{
+                color: "#370C64",
+                backgroundColor: "white",
+                border: "none",
+              }}
+            >
+              Recent Blogs
+            </Button>
+          </div>
+          <div className="p-2 bd-highlight">Flex item</div>
+          <div className="p-2 bd-highlight">Flex item</div>
+          <div className="p-2 bd-highlight">Flex item</div>
 
-          <div
-            className="d-flex justify-content-center align-items-center"
-            style={{ flex: "0.2" }}
-          >
-            <SearchBox
-              searchBlogs={searchBlogs}
-              place="Search by category or keyword"
-            />
+          <div className="ms-auto p-2 bd-highlight">
+            <Button
+              size="lg"
+              style={{
+                color: "#370C64",
+                backgroundColor: "white",
+                border: "none",
+              }}
+              active
+            >
+              <SearchIcon style={{ color: "#370C64" }} className="" />
+            </Button>
           </div>
         </div>
-        {/* <Row className="mt-5 ">
-          {data.map((a, index) => {
-            return (
-              <Col key={index} md={6} xs={12} className="px-5 py-3">
-                <div
-                  className="mb-2"
-                  style={{
-                    background: "#FAFAFA",
-                    boxShadow: "0.5px 0.5px 30px rgba(0, 0, 0, 0.3)",
-                    borderRadius: "10px",
-                    zIndex: "-1",
-                  }}
-                >
-                  <Row className="p-0">
-                    <img
-                      src={a.image}
-                      alt="blog"
-                      className=" img-fluid rounded"
-                      style={{ height: "250px", width: "650px" }}
-                    />
-                  </Row>
-                  <Row className="px-5 my-2">
-                    <Col
+
+        <hr className="bg-white border-2 border-top border-danger" />
+        <Row>
+          <Col lg={true}>
+            <BlogCard item={data.data[1]} />
+          </Col>
+          <Col>
+            <Stack gap={3}>
+              <div className="">
+                <h6 style={{ color: "#370C64" }}>Send us a Mail</h6>{" "}
+                <Form.Control
+                  className="float-sm-start"
+                  placeholder="Enter your mail..."
+                  style={{ width: "70%" }}
+                />
+                <Button style={{ backgroundColor: "#370C64" }}>
+                  contact us
+                </Button>
+              </div>
+              <div className="">
+                <h6 style={{ color: "#370C64" }}>Most Popular</h6>{" "}
+                <Figure className="">
+                  <Figure.Image
+                    width={118}
+                    height={110}
+                    alt="171x180"
+                    src="images/blog/BLOgs-10.png"
+                    className="float-sm-start p-md-2"
+                  />
+                  <Figure.Caption className="">
+                    <p
+                      className="card-text "
                       style={{
                         fontFamily: "Arial",
-                        fontSize: "12px",
+                        fontStyle: "normal",
                         fontWeight: "400",
-                      }}
-                    ></Col>
-                    <Col
-                      style={{
-                        fontFamily: "Arial",
-                        fontSize: "12px",
-                        fontWeight: "400",
-                      }}
-                    >
-                      <span style={{ float: "right" }}>
-                        <i className="fa-solid fa-calendar-range"></i> 3/14/2022
-                      </span>
-                    </Col>
-                  </Row>
-                  <Row className="d-flex justify-content-center align-items-center mb-2 px-3">
-                    <h1
-                      className="purpleHeading"
-                      style={{
-                        fontSize: "18px",
+                        fontSize: "15px",
+                        lineHeight: "17px",
                         color: "#370C64",
-                        fontFamily: "Cambria",
+                      }}
+                    >
+                      Australia Migration
+                    </p>
+                    <p
+                      className="card-text"
+                      style={{
+                        fontFamily: "Century Gothic",
+                        fontStyle: "normal",
                         fontWeight: "700",
+                        fontSize: "20px",
+                        lineHeight: "25px",
+                        color: "#370C64",
                       }}
                     >
-                      {a.title}
-                    </h1>
-                    <div
+                      Best CDR writing services for engineers Australia{" "}
+                    </p>
+                  </Figure.Caption>
+                </Figure>
+                <Figure className="">
+                  <Figure.Image
+                    width={118}
+                    height={110}
+                    alt="171x180"
+                    src="images/blog/BLOgs-10.png"
+                    className="float-sm-start p-md-2"
+                  />
+                  <Figure.Caption className="">
+                    <p
+                      className="card-text "
                       style={{
-                        height: "40px",
+                        fontFamily: "Arial",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        fontSize: "15px",
+                        lineHeight: "17px",
+                        color: "#370C64",
                       }}
                     >
-                      <p
-                        className="textParagraphP"
-                        style={{
-                          color: "#666666",
-                          fontSize: "15px",
-                          fontFamily: "Arial",
-                          overflow: "hidden",
-                          whiteSpace: "nowrap",
-                          textOverflow: "ellipsis",
-                        }}
-                      >
-                        Competency Demonstration Report (CDR) is an essential
-                        document that showcases your engineering skills and
-                        .....
-                      </p>
-                    </div>
-                  </Row>
-                  <Row className="d-flex justify-content-center align-items-center">
-                    <Button
-                      className="px-4 mb-4"
+                      Australia Migration
+                    </p>
+                    <p
+                      className="card-text"
                       style={{
-                        fontSize: "18px",
-                        background: "#FA2545",
-                        width: "fit-content",
-                        borderRadius: "10px",
-                        outline: "none",
-                        border: "none",
-                        cursor: "pointer",
+                        fontFamily: "Century Gothic",
+                        fontStyle: "normal",
+                        fontWeight: "700",
+                        fontSize: "20px",
+                        lineHeight: "25px",
+                        color: "#370C64",
                       }}
-                      // onClick={() =>
-                      //   navigate(
-                      //     `/blogs/${a.title
-                      //       .split(" (")[0]
-                      //       .toLowerCase()
-                      //       .replaceAll(" ", "-")}`,
-                      //     {
-                      //       state: { blog: a },
-                      //     }
-                      //   )
-                      // }
                     >
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        state={a}
-                        href={`/blogs/${a.title
-                          .split(" (")[0]
-                          .toLowerCase()
-                          .replaceAll(" ", "-")}`}
-                      >
-                        Read More
-                      </Link>
-                    </Button>
-                  </Row>
-                </div>
-              </Col>
-            );
-          })}
-        </Row> */}
+                      Best CDR writing services for engineers Australia{" "}
+                    </p>
+                  </Figure.Caption>
+                </Figure>{" "}
+                <Figure className="">
+                  <Figure.Image
+                    width={118}
+                    height={110}
+                    alt="171x180"
+                    src="images/blog/BLOgs-10.png"
+                    className="float-sm-start p-md-2"
+                  />
+                  <Figure.Caption className="">
+                    <p
+                      className="card-text "
+                      style={{
+                        fontFamily: "Arial",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        fontSize: "15px",
+                        lineHeight: "17px",
+                        color: "#370C64",
+                      }}
+                    >
+                      Australia Migration
+                    </p>
+                    <p
+                      className="card-text"
+                      style={{
+                        fontFamily: "Century Gothic",
+                        fontStyle: "normal",
+                        fontWeight: "700",
+                        fontSize: "20px",
+                        lineHeight: "25px",
+                        color: "#370C64",
+                      }}
+                    >
+                      Best CDR writing services for engineers Australia{" "}
+                    </p>
+                  </Figure.Caption>
+                </Figure>
+              </div>
+            </Stack>
+          </Col>
+        </Row>
       </Container>
 
-      <div className="px-5" style={{ background: "#F8F8F8" }}>
-        <PurpleHeading title="Hundreds of our clients have received positive approval! Now is your Time !" />
-        <TextParagraph
-          content="Our main aim is to see our client’s approval for a well-formed report that adheres to the proper guidelines created for the migrants. 
-CDRReportWriters offers high-quality service at an affordable price to ensure complete customer satisfaction"
-          family="Arial"
-        />
-        <div className="d-flex justify-content-center align-items-center">
-          <Button
-            className="px-4 mb-4"
-            style={{
-              fontSize: "18px",
-              background: "#FA2545",
-              width: "fit-content",
-              borderRadius: "10px",
-              outline: "none",
-              border: "none",
-            }}
-            onClick={() => router.push(`/pricing`)}
-          >
-            Get Pricing Details Here
-          </Button>
+      <div className="album py-5 ">
+        <div className="container">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {status === "success" &&
+              data.data.map((item, index) => {
+                {
+                  /* setTitle(item.attributes.title); */
+                }
+                return (
+                  <>
+                    <div key={item.id}>
+                      <BlogCard item={item} />
+                      <br />
+
+                      <BlogCard item={item} />
+                      <br />
+
+                      <BlogCard item={item} />
+                    </div>
+                  </>
+                );
+              })}
+          </div>
         </div>
       </div>
+
+      <Container className="p-1 mb-5">
+        <Stack
+          direction="horizontal"
+          gap={3}
+          className="col-md-5 mx-auto position-relative"
+        >
+          <div className="position-absolute  top-50 start-50 translate-middle">
+            <Pagination style={{ color: "red" }} className="link-hover">
+              <Pagination.Prev
+                className=" mx-5  "
+                onClick={() => setpData(pData - 1)}
+                disabled={pData === 1}
+              >
+                previous
+              </Pagination.Prev>
+              {items}
+              <Pagination.Next
+                className=" mx-5 "
+                onClick={() => setpData(pData + 1)}
+                disabled={pData === 4}
+              >
+                next
+              </Pagination.Next>
+            </Pagination>
+          </div>
+        </Stack>
+      </Container>
+
+      <div
+        style={{
+          background:
+            "linear-gradient(90deg, #60269E 0%, #4C1980 35.73%, #360B62 100%)",
+        }}
+      >
+        <Row style={{ color: "white" }}>
+          <div className="m-5 p-4 col">
+            <h5>World-class articles, delivered weekly.</h5>
+          </div>
+          <Row className="col-md p-5">
+            <Form.Control className="col" placeholder="Add your item here..." />
+            <Button variant="danger " className="col-4">
+              Suscribe
+            </Button>
+            <div className="p-0 my-1">
+              Subscription implies consent to our privacy policy
+            </div>
+          </Row>
+        </Row>
+      </div>
+
+      <div className="album py-5 ">
+        <div className="container">
+          <h2 className="pb-5">Most-read Articles</h2>
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {status === "success" &&
+              data.data.map((item, index) => {
+                {
+                  /* setTitle(item.attributes.title); */
+                }
+                return (
+                  <>
+                    <div key={item.id}>
+                      <BlogCard item={item} />
+                    </div>
+                  </>
+                );
+              })}
+          </div>
+        </div>
+      </div>
+      <p>custom d</p>
+      <style jsx>{``}</style>
     </div>
   );
 };
 
+export async function getServerSideProps() {
+  const res = await fetch(
+    "https://cdrskill.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=3&populate=deep"
+  );
+  const resdata = await res.json();
+  return { props: { rdata: resdata } };
+}
+
 export default Blogs;
 
+// export const getStaticProps = async () => {
+//   const dat = axios.get(
+//     `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer`
+//   );
 
-export const getStaticProps = async() =>{
-  
-  const dat = axios.get(
-    `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer`
-  )
-  
-  return {
-    props: {dat:[]}
-  }
-}
+//   return {
+//     props: { dat: [] },
+//   };
+// };
