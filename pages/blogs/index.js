@@ -2,81 +2,138 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container, Button, Row, Col } from "react-bootstrap";
-import Hero from "../../components/Hero";
-import PurpleHeading from "../../components/PurpleHeading";
-import SearchBox from "../../components/Samples/SearchBox";
-import TextParagraph from "../../components/TextParagraph";
-import axios from "axios";
 
-const Blogs = () => {
+import {
+  Container,
+  Button,
+  Row,
+  Col,
+  Stack,
+  Pagination,
+  Form,
+  Nav,
+  ToggleButton,
+  Figure,
+} from "react-bootstrap";
+
+import styles from "../../styles/Blog.module.css";
+
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+import moment from "moment";
+import BlogCard from "../../components/Blog/BlogCard";
+import SearchIcon from "@mui/icons-material/Search";
+import { Check } from "@mui/icons-material";
+
+const getBlogs = async (key) => {
+  const keyValue = key.queryKey[1].titleSlug;
+  if (keyValue) {
+    keyValue === 1 ? keyValue : keyValue * 3;
+    // const res = await fetch(
+    //   `https://cdrforengineer.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=${keyValue}&pagination[limit]=6&populate=deep`
+    // );
+    const res = await fetch(
+      `https://cdrforengineer.herokuapp.com/api/blogs?populate=deep`
+    );
+    const data = await res.json();
+    console.log();
+    return data;
+  }
+  const res = await fetch(
+    "https://cdrforengineer.herokuapp.com/api/blogs?populate=deep"
+  );
+  const data = await res.json();
+  console.log();
+  return data;
+};
+
+const Blogs = ({ rdata }) => {
+  const [checked, setChecked] = useState("1");
+  const [pData, setpData] = useState(1);
   const router = useRouter();
   const canonicalUrl = (
     `https://www.cdrforengineer.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
-  const [data, setData] = useState([]);
-
-  const searchBlogs = () => {};
-
-  const tabItem = [
-    "All Blogs",
-    "Recent Blogs",
-    "Skills Assessment",
-    "Australian Migration",
-    "CDR Service",
-  ];
-  const changeTab = async (title) => {
-    axios
-      .get(
-        `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer?type=${title}`
-      )
-      .then((res) => setData(res.data.blog));
-  };
+  const queryClient = useQueryClient();
+  const { data, status } = useQuery(["blogs", { titleSlug: pData }], getBlogs, {
+    initialData: rdata,
+    keepPreviousData: true,
+  });
+  console.log(checked);
+  let active = pData;
+  let items = [];
+  for (let number = 1; number <= 4; number++) {
+    items.push(
+      <Pagination.Item
+        key={number}
+        active={number === active}
+        onClick={() => setpData(number)}
+        className=" mx-1 rounded-circle"
+      >
+        {number}
+      </Pagination.Item>
+    );
+  }
 
   return (
     <div>
-      <Head>
-        <title>Blogs | CDR For Engineer</title>
-        <meta
-          name="description"
-          content="Articles on and about cdr with cdrforengineer | CDR For Engineer"
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Head>
+      <>
+        {/* <Head>
+          <title>Blogs | CDR For Engineer</title>
+          <meta
+            name="description"
+            content="Articles on and about cdr with cdrforengineer | CDR For Engineer"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head> */}
+      </>
 
-      <Hero
-        title="Check our Blogs written by
-Experienced Bloggers
-"
-        details="Blogs related to CDR Service, Australia Migration & Skill
-Assessment. "
-      />
-      <PurpleHeading title="Home / Blogs" />
+      <div
+        style={{
+          background:
+            "linear-gradient(90deg, #60269E 0%, #4C1980 35.73%, #360B62 100%)",
+        }}
+      >
+        <Container>
+          <Stack gap={1} style={{ color: "white" }}>
+            <div>
+              <h1 className="my-5 "> CDRforengineer Blogs</h1>
+            </div>
+            <div className="pb-5">Home/blog</div>
+          </Stack>
+        </Container>
+      </div>
+
       <Container>
-        <div className="d-flex justify-content-start align-items-center">
-          <div style={{ flex: "0.8", display: "flex" }}>
-            {tabItem.map((t, i) => (
-              <div
-                key={i}
-                className="d-flex justify-content-center align-items-center "
-              >
-                <div
-                  className="blogsTabsTitle"
-                  style={{
-                    color: "#370C64",
-                    fontWeight: "700",
-                    fontSize: "18px",
-                    minWidth: "fit-content",
-                    maxWidth: "200px",
-                    padding: "5px 12px",
-                  }}
-                  onClick={(e) => changeTab(t)}
-                >
-                  {t}
-                </div>
-              </div>
-            ))}
+        <hr className="bg-white border-2 border-top border-danger" />
+        <div className="d-flex bd-highlight mb-3 flex-wrap">
+          <div className="p-2 ">
+            <Button
+              bsPrefix="btn btn2"
+              type="checkbox"
+              value={"1"}
+              className={checked == 1 ? styles.btn2 : styles.btn}
+              onClick={(e) => setChecked(e.currentTarget.value)}
+            >
+              All Blogs
+            </Button>
+          </div>
+          <div className="p-2 ">
+            <Button
+              bsPrefix="btn btn2"
+              type="checkbox"
+              value={"2"}
+              className={checked == 2 ? styles.btn2 : styles.btn}
+              onClick={(e) => setChecked(e.currentTarget.value)}
+            >
+              Recent Blogs
+            </Button>
           </div>
           <div className="p-2 ">
             <Button
@@ -145,29 +202,38 @@ Assessment. "
             </Button>
           </div>
         </div>
-        <Row className="mt-5 ">
-          {data.map((a, index) => {
-            return (
-              <Col key={index} md={6} xs={12} className="px-5 py-3">
-                <div
-                  className="mb-2"
-                  style={{
-                    background: "#FAFAFA",
-                    boxShadow: "0.5px 0.5px 30px rgba(0, 0, 0, 0.3)",
-                    borderRadius: "10px",
-                    zIndex: "-1",
-                  }}
-                >
-                  <Row className="p-0">
-                    <img
-                      src={a.image}
-                      alt="blog"
-                      className=" img-fluid rounded"
-                      style={{ height: "250px", width: "650px" }}
-                    />
-                  </Row>
-                  <Row className="px-5 my-2">
-                    <Col
+
+        <hr className="bg-white border-2 border-top border-danger" />
+        <Row>
+          <Col lg={true}>
+            <BlogCard item={data.data[1]} />
+          </Col>
+          <Col>
+            <Stack gap={3}>
+              <div className="">
+                <h6 style={{ color: "#370C64" }}>Send us a Mail</h6>{" "}
+                <Form.Control
+                  className="float-sm-start"
+                  placeholder="Enter your mail..."
+                  style={{ width: "70%" }}
+                />
+                <Button style={{ backgroundColor: "#370C64" }}>
+                  contact us
+                </Button>
+              </div>
+              <div className="">
+                <h6 style={{ color: "#370C64" }}>Most Popular</h6>{" "}
+                <Figure className="">
+                  <Figure.Image
+                    width={118}
+                    height={110}
+                    alt="171x180"
+                    src="images/blog/BLOgs-10.png"
+                    className="float-sm-start p-md-2"
+                  />
+                  <Figure.Caption className="">
+                    <p
+                      className="card-text "
                       style={{
                         fontFamily: "Arial",
                         fontStyle: "normal",
@@ -264,22 +330,13 @@ Assessment. "
                         color: "#370C64",
                       }}
                     >
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        state={a}
-                        href={`/blogs/${a.title
-                          .split(" (")[0]
-                          .toLowerCase()
-                          .replaceAll(" ", "-")}`}
-                      >
-                        Read More
-                      </Link>
-                    </Button>
-                  </Row>
-                </div>
-              </Col>
-            );
-          })}
+                      Best CDR writing services for engineers Australia{" "}
+                    </p>
+                  </Figure.Caption>
+                </Figure>
+              </div>
+            </Stack>
+          </Col>
         </Row>
       </Container>
 
@@ -387,12 +444,12 @@ export async function getStaticProps() {
 
 export default Blogs;
 
-export const getStaticProps = async () => {
-  const dat = axios.get(
-    `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer`
-  );
+// export const getStaticProps = async () => {
+//   const dat = axios.get(
+//     `https://cdrdashboardbackend.herokuapp.com/api/blogs/blog-list/cdrforengineer`
+//   );
 
-  return {
-    props: { dat: [] },
-  };
-};
+//   return {
+//     props: { dat: [] },
+//   };
+// };
