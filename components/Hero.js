@@ -2,18 +2,18 @@ import React, { useState, useRef } from "react";
 //sends email using js
 import emailjs from "@emailjs/browser";
 
-import { Row,  Form, Button } from "react-bootstrap";
+import { Row, Form, Button } from "react-bootstrap";
 import DesignBubble from "./DesignBubble";
 
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import Chatra from "@chatra/chatra";
 
 const Hero = ({ title, details }) => {
   const form = useRef();
-  const router = useRouter()
+  const router = useRouter();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -38,7 +38,7 @@ const Hero = ({ title, details }) => {
           setMessage("");
         },
         (error) => {
-          console.log(error)
+          console.log(error);
           alert("Sorry something went wrong.");
         }
       );
@@ -63,10 +63,12 @@ const Hero = ({ title, details }) => {
                       border: "none",
                     }}
                     // onClick={() => Chatra("openChat", true)}
-
                   >
-                    <div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-                      Chat with us</a></div>
+                    <div data-id="a454874ff4" className="livechat_button">
+                      <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                        Chat with us
+                      </a>
+                    </div>
                     {/* Chat with us */}
                   </Button>
                   <Button
@@ -88,7 +90,6 @@ const Hero = ({ title, details }) => {
                 <a
                   style={{ textDecoration: "none", color: "white" }}
                   href="https://api.whatsapp.com/send?phone=61482072510"
-
                 >
                   +61 482 072 510
                 </a>
@@ -103,7 +104,6 @@ const Hero = ({ title, details }) => {
           style={{ width: "50%", marginTop: "-200px" }}
           xs={12}
         >
-          
           <Form
             ref={form}
             onSubmit={submitFormhandler}
@@ -113,7 +113,11 @@ const Hero = ({ title, details }) => {
               <h2>Get Free Consultation</h2>
               <h6>Free Consultation from Experts</h6>
             </div>
-            <Form.Group className="mb-3" controlId="sitename" style={{display:"none"}}>
+            <Form.Group
+              className="mb-3"
+              controlId="sitename"
+              style={{ display: "none" }}
+            >
               <Form.Control
                 placeholder="Site Name"
                 value="CDR For Engineer"

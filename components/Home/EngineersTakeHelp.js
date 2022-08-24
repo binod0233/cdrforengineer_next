@@ -2,8 +2,10 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
 import TextParagraph from "../TextParagraph";
+import parse from "html-react-parser";
 
-const EngineersTakeHelp = () => {
+const EngineersTakeHelp = ({ data }) => {
+  const { reports_title, steps } = data;
   const list = [
     {
       image: "/images/Home/let-us-know-final.png",
@@ -52,31 +54,28 @@ const EngineersTakeHelp = () => {
   ];
   return (
     <Container className="py-4">
-      <PurpleHeading
-        title="Engineers take help from professionals with years of experience in writing 
-CDR reports in Australia"
-      />
+      <PurpleHeading title={reports_title} />
       <TextParagraph
-        data="We guarantee high-quality CDR reports with original and plagiarism-free content. Expert writers at CDR For Engineers follow the 
+        content="We guarantee high-quality CDR reports with original and plagiarism-free content. Expert writers at CDR For Engineers follow the 
 guidelines and format mentioned in Engineers Australia's MSA booklet while writing the CDR report. Our professional Experts 
 from an engineering background devote a considerable effort to preparing the CDR report. Get a CDR report to ensure a positive 
 assessment from Engineers Australia in a few simple steps:"
       />
       <Row>
-        {list.map((l, i) => (
+        {steps.map((item, i) => (
           <Col md={3} xs={12} key={i} style={{ paddingRight: "5px" }}>
             <div style={{ background: "#E5E5E5" }}>
               <div
                 style={{
-                  height: "250px",
+                  height: "260px",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
               >
                 <img
-                  src={l.image}
-                  alt={l.subTitle}
+                  src={item.image?.data?.attributes?.url}
+                  alt={item.image?.data?.attributes?.alternativeText}
                   style={{ height: "100%", objectFit: "contain" }}
                 />
               </div>
@@ -90,18 +89,18 @@ assessment from Engineers Australia in a few simple steps:"
                     padding: "0",
                   }}
                 >
-                  <strong>{l.title}</strong>
+                  <strong>{item?.title}</strong>
                 </p>
                 <br />
-                <p
+                {/* <p
                   style={{
                     textAlign: "center",
                     marginBottom: "0",
                     marginTop: "-10px",
                   }}
                 >
-                  <strong>{l.subTitle}</strong>
-                </p>
+                  <strong>{item.subTitle}</strong>
+                </p> */}
                 <p
                   style={{
                     textAlign: "center",
@@ -109,7 +108,7 @@ assessment from Engineers Australia in a few simple steps:"
                     fontFamily: "Arial",
                   }}
                 >
-                  {l.details}
+                  {item?.paragraph && parse(item.paragraph)}{" "}
                 </p>
               </div>
             </div>

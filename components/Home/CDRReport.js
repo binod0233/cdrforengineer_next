@@ -2,8 +2,9 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
 import TextParagraph from "../TextParagraph";
-
-const CDRReport = () => {
+import parse from "html-react-parser";
+const CDRReport = ({ data }) => {
+  const { positive } = data;
   const list = [
     { image: "/images/Home/3-career.png", title: "3 Career Episodes" },
     { image: "/images/Home/summary-statement.png", title: "Summary Statement" },
@@ -18,20 +19,28 @@ const CDRReport = () => {
       <Row>
         <Col md={5}>
           <img
-            src="/images/Home/a-man-writing-report.png"
-            alt="a man writing report"
-            className='img-fluid'
+            src={positive.image?.data?.attributes?.url}
+            alt={positive.image?.data?.attributes?.alternativeText}
+            className="img-fluid"
           />
         </Col>
         <Col md={7}>
-          <PurpleHeading title="CDR report for positive assessment by EA?" />
-          <TextParagraph
-            data="Engineers pursuing a career in Australia demonstrate their expertise through 
-CDR report in written form. To assess an engineer’s proficiency in engineering 
-skills and knowledge, management, communication and leadership Engineers 
-Australia uses a variety of customized papers.  
-CDR report for Engineers Australia consists of three different documents namely: "
-          />
+          <PurpleHeading title={positive?.title} />
+          <p
+            className="textParagraphP"
+            style={{
+              // color: "#666666",
+              // textAlign: centerAlign ? "center" : "justify",
+              fontSize: "18px",
+            }}
+          >
+            Engineers pursuing a career in Australia demonstrate their expertise
+            through CDR report in written form. To assess an engineer’s
+            proficiency in engineering skills and knowledge, management,
+            communication and leadership Engineers Australia uses a variety of
+            customized papers. CDR report for Engineers Australia consists of
+            three different documents namely:
+          </p>
           <Row>
             {list.map((l, i) => (
               <Col key={i} md={6} className="p-2">
