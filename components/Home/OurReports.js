@@ -2,69 +2,15 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
 import "../../styles/componentStyles.module.css";
+import parse from "html-react-parser";
+const OurReports = ({ data }) => {
+  const { trackRecord, title } = data;
 
-const OurReports = () => {
-  const list = [
-    {
-      image: "/images/Home/plagiarismfree.png",
-      title: "Plagiarism Free Report",
-      details: `We prepare CDR reports free of 
-    plagiarism. Using content from the 
-    internet in your CDR report will get 
-    you banned for plagiarism by EA.`,
-    },
-    {
-      image: "/images/Home/uniqueandsufficient.png",
-      title: "Writers with years of experience",
-      details: `Professional CDR writers from 
-    different engineering backgrounds
-    work together and prepare a flawless 
-    CDR report that will get approved
-    by Engineers Australia`,
-    },
-    {
-      image: "/images/Home/properformat.png",
-      title: "Proper format and Structure",
-      details: `Engineering skills, education and 
-    experience are to be presented in 
-    CDR report properly in the same 
-    format and structure defined by 
-    Engineers Australia.`,
-    },
-    {
-      image: "/images/Home/professionalwriters.png",
-      title: "Professional Writers",
-      details: `Expert writers with years of experience 
-    in CDR writing will assist you in writing 
-    a proper CDR report to get a positive 
-    assessment.`,
-    },
-    {
-      image: "/images/Home/uniqueandsufficient.png",
-      title: "Unique and Sufficient content",
-      details: `An incomplete CDR Report will not get 
-    assessed by Engineers Australia. 
-    Our team of expert writers at 
-    CDR For Engineers prepare each 
-    CDR report with sufficient and 
-    unique content`,
-    },
-    {
-      image: "/images/Home/positiveresult.png",
-      title: "Positive result",
-      details: `We successfully maintained a high 
-    approval rate of the CDR report from 
-    Engineers Australia. Our Expert writers 
-    have years of experience in this CDR 
-    report writing field and always work 
-    smart to deliver promised services. `,
-    },
-  ];
   return (
     <Container>
-      <PurpleHeading title="We have an excellent track record in CDR services." />
+      <PurpleHeading title={title} />
       <Row className="my-2 my-md-5">
-        {list.map((l,index) => (
+        {trackRecord.map((item, index) => (
           <Col key={index} md={4} sm={12} className="p-3 my-md-5 my-3">
             <div
               style={{
@@ -92,15 +38,17 @@ const OurReports = () => {
                 }}
               >
                 <img
-                  src={l.image}
+                  src={item.image?.data?.attributes?.url}
                   alt="Client"
                   style={{ objectFit: "contain" }}
                   className="img-fluid"
                 />
               </div>
               <div>
-                <h5 className="text-center">{l.title}</h5>
-                <p className="text-center">{l.details}</p>
+                <h5 className="text-center">{item?.title}</h5>
+                <p className="text-center">
+                  {item?.paragraph && parse(item.paragraph)}
+                </p>
               </div>
             </div>
           </Col>

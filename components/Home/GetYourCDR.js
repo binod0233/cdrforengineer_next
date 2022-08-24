@@ -3,42 +3,36 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import PurpleHeading from "../PurpleHeading";
 import TextParagraph from "../TextParagraph";
 import Chatra from "@chatra/chatra";
-import '../../styles/componentStyles.module.css'
-
-const GetYourCDR = () => {
+import "../../styles/componentStyles.module.css";
+import parse from "html-react-parser";
+const GetYourCDR = ({ data }) => {
+  const { approval, steps } = data;
   return (
     <Container className="my-5">
       <Row>
         <Col md={5} className="px-5">
-          <PurpleHeading
-            title="Get your CDR report 
-Approved and accepted"
-          />
+          <PurpleHeading title={approval?.title} />
           <TextParagraph
-            content="A satisfied customer is the best business 
-strategy of all. We successfully made a 
-decent track record of getting approvals 
-for CDR reports that we have prepared 
-for Engineers in Australia.Professional 
-writers with years of experience are ready
-to assist you."
+            content={approval?.paragraph && parse(approval.paragraph)}
+            family="Arial"
           />
           <Button
             className="formSubmitButton"
             variant="primary"
             type="submit"
             // onClick={() => Chatra("openChat", true)}
-
           >
-<div data-id="a454874ff4" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
-Contact Us</a></div>
+            <div data-id="a454874ff4" className="livechat_button">
+              <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
+                Contact Us
+              </a>
+            </div>
             {/* Contact Us */}
           </Button>
         </Col>
         <Col md={7}>
           <div
-                      className="onTimeDelivery"
-
+            className="onTimeDelivery"
             style={{
               background: "#EAF0FC",
               height: "100px",
@@ -113,8 +107,7 @@ Contact Us</a></div>
             </Row>
           </div>
           <div
-                      className="onTimeDelivery"
-
+            className="onTimeDelivery"
             style={{
               background: "#EAF0FC",
               height: "100px",

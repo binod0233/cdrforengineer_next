@@ -38,7 +38,7 @@ const Hero = ({ title, details }) => {
           setMessage("");
         },
         (error) => {
-          console.log();
+          console.log(error);
           alert("Sorry something went wrong.");
         }
       );
@@ -64,7 +64,7 @@ const Hero = ({ title, details }) => {
                     }}
                     // onClick={() => Chatra("openChat", true)}
                   >
-                    <div data-id="a454874ff4" class="livechat_button">
+                    <div data-id="a454874ff4" className="livechat_button">
                       <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14286585">
                         Chat with us
                       </a>

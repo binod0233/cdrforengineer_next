@@ -1,15 +1,18 @@
 import React from "react";
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import ManagerEngineer from "../components/ANZoCode/ManagerEngineer"
+import Head from "next/head";
+import { useRouter } from "next/router";
+import ManagerEngineer from "../components/ANZoCode/ManagerEngineer";
 import RelativeSponsorShip from "../components/ANZoCode/RelativeSponsorShip";
 import SponsorShipOptions from "../components/ANZoCode/SponsorShipOptions";
 import VisaOptions from "../components/ANZoCode/VisaOptions";
 import Hero from "../components/Hero";
 const ANZO = () => {
-  const router = useRouter()
-  const canonicalUrl = (`https://www.cdrforengineer.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
-  const  field  = router.query.field
+  const router = useRouter();
+  const canonicalUrl = (
+    `https://www.cdrforengineer.com` +
+    (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
+  const field = router.query.field;
   const allData = {
     engineeringManager: {
       managerEngineer: {
@@ -9526,272 +9529,330 @@ of South Australia
   return (
     <>
       {field === "engineering-manager-anzsco-133211" && (
-       
         <Head>
-      <title>Engineering Manager | Unit Group 1332 | ANZSCO 133211</title>
-      <meta name='description' content='Engineering Manager | Unit Group 1332 | ANZSCO 133211'/>
-      <link rel="canonical" href={canonicalUrl} />
-
-    </Head>
+          <title>Engineering Manager | Unit Group 1332 | ANZSCO 133211</title>
+          <meta
+            name="description"
+            content="Engineering Manager | Unit Group 1332 | ANZSCO 133211"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "chemical-engineer-anzsco-233111" && (
-         <Head>
-         <title>Chemical Engineer | Unit Group 2331 | ANZSCO 233111</title>
-         <meta name='description' content='Chemical Engineer | Unit Group 2331 | ANZSCO 233111'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-       </Head>
-        
+        <Head>
+          <title>Chemical Engineer | Unit Group 2331 | ANZSCO 233111</title>
+          <meta
+            name="description"
+            content="Chemical Engineer | Unit Group 2331 | ANZSCO 233111"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "materials-engineer-anzsco-233112" && (
-       
         <Head>
-        <title>Material Engineer | Unit Group 2331 | ANZSCO 233112 | CDRXperets</title>
-        <meta name='descripion' content='Material Engineer | Unit Group 2331 | ANZSCO 233112 | CDRXperets'/>
-        <link rel="canonical" href={canonicalUrl} />
-
-      </Head>
+          <title>
+            Material Engineer | Unit Group 2331 | ANZSCO 233112 | CDRXperets
+          </title>
+          <meta
+            name="descripion"
+            content="Material Engineer | Unit Group 2331 | ANZSCO 233112 | CDRXperets"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "civil-engineer-anzsco-233211" && (
         <Head>
-        <title>Civil Engineer | Unit Group 2332 | ANZSCO 233211 | CDR For Engineer</title>
-        <meta name='description' content='Civil Engineer | Unit Group 2332 | ANZSCO 233211 | CDR For Engineer'/>
-        <link rel="canonical" href={canonicalUrl} />
-
-      </Head>
-      
+          <title>
+            Civil Engineer | Unit Group 2332 | ANZSCO 233211 | CDR For Engineer
+          </title>
+          <meta
+            name="description"
+            content="Civil Engineer | Unit Group 2332 | ANZSCO 233211 | CDR For Engineer"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "geo-technical-engineer-anzsco-233212" && (
-       
         <Head>
-        <title>Geotechnical Engineer | Unit Group 2332 | ANZSCO 233212</title>
-        <meta name='description' content='Geotechnical Engineer | Unit Group 2332 | ANZSCO 233212'/>
-        <link rel="canonical" href={canonicalUrl} />
-
-      </Head>
+          <title>Geotechnical Engineer | Unit Group 2332 | ANZSCO 233212</title>
+          <meta
+            name="description"
+            content="Geotechnical Engineer | Unit Group 2332 | ANZSCO 233212"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "structural-engineer-anzsco-233214" && (
-
-<Head>
-<title>Structural Engineer | Unit Group 2332 | Anzsco 233214 | CDR For Engineer</title>
-<meta name='description' content='Structural Engineer | Unit Group 2332 | Anzsco 233214 | CDR For Engineer'/>
-<link rel="canonical" href={canonicalUrl} />
-
-</Head>
-
+        <Head>
+          <title>
+            Structural Engineer | Unit Group 2332 | Anzsco 233214 | CDR For
+            Engineer
+          </title>
+          <meta
+            name="description"
+            content="Structural Engineer | Unit Group 2332 | Anzsco 233214 | CDR For Engineer"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "transport-engineer-anzsco-233215" && (
         <Head>
-        <title>Transport Engineer | Unit Group 2332 | Anzsco 233215</title>
-        <meta name='description' content='Transport Engineer | Unit Group 2332 | Anzsco 233215'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>Transport Engineer | Unit Group 2332 | Anzsco 233215</title>
+          <meta
+            name="description"
+            content="Transport Engineer | Unit Group 2332 | Anzsco 233215"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-        
       )}
 
       {field === "electrical-engineer-anzsco-233311" && (
-         <Head>
-         <title>Electrical Engineer | Unit Group 2333 | Anzsco 233311</title>
-         <meta name='description' content='Electrical Engineer | Unit Group 2333 | Anzsco 233311'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-
+        <Head>
+          <title>Electrical Engineer | Unit Group 2333 | Anzsco 233311</title>
+          <meta
+            name="description"
+            content="Electrical Engineer | Unit Group 2333 | Anzsco 233311"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "electronics-engineer-anzsco-233411" && (
         <Head>
-        <title>Electronics Engineer | Unit Group 2334 | Anzsco 233411</title>
-        <meta name='description' content='Electronics Engineer | Unit Group 2334 | Anzsco 233411'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>Electronics Engineer | Unit Group 2334 | Anzsco 233411</title>
+          <meta
+            name="description"
+            content="Electronics Engineer | Unit Group 2334 | Anzsco 233411"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-       
       )}
 
       {field === "industrial-engineer-anzsco-233511" && (
-         <Head>
-         <title>Industrial Engineer | Unit Group 2335 | ANZSCO 233511</title>
-         <meta name='description' content='Industrial Engineer | Unit Group 2335 | ANZSCO 233511'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-       
+        <Head>
+          <title>Industrial Engineer | Unit Group 2335 | ANZSCO 233511</title>
+          <meta
+            name="description"
+            content="Industrial Engineer | Unit Group 2335 | ANZSCO 233511"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "mechanical-engineer-anzsco-233512" && (
-         <Head>
-         <title>Mechanical Engineer | Unit Group 2335 | ANZSCO 233512</title>
-         <meta name='description' content='Mechanical Engineer | Unit Group 2335 | ANZSCO 233512'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-      
+        <Head>
+          <title>Mechanical Engineer | Unit Group 2335 | ANZSCO 233512</title>
+          <meta
+            name="description"
+            content="Mechanical Engineer | Unit Group 2335 | ANZSCO 233512"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "production-or-plant-engineer-anzsco-233513" && (
         <Head>
-        <title>Production or Plant Engineer | Unit Group 2325 | ANZSCO 233513</title>
-        <meta name='description' content='Production or Plant Engineer | Unit Group 2325 | ANZSCO 233513'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Production or Plant Engineer | Unit Group 2325 | ANZSCO 233513
+          </title>
+          <meta
+            name="description"
+            content="Production or Plant Engineer | Unit Group 2325 | ANZSCO 233513"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-       
       )}
 
       {field === "mining-engineer-anzsco-233611" && (
         <Head>
-        <title>Mining Engineer | Unit Group 2336 | ANZSCO 233611</title>
-        <meta name='description' content='Mining Engineer | Unit Group 2336 | ANZSCO 233611'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>Mining Engineer | Unit Group 2336 | ANZSCO 233611</title>
+          <meta
+            name="description"
+            content="Mining Engineer | Unit Group 2336 | ANZSCO 233611"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-      
       )}
 
       {field === "petroleum-engineer-anzsco-233612" && (
-         <Head>
-         <title>Petroleum Engineer | Unit Group 2336 | ANZSCO 233612</title>
-         <meta name='description' content='Petroleum Engineer | Unit Group 2336 | ANZSCO 233612'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-       
+        <Head>
+          <title>Petroleum Engineer | Unit Group 2336 | ANZSCO 233612</title>
+          <meta
+            name="description"
+            content="Petroleum Engineer | Unit Group 2336 | ANZSCO 233612"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "aeronautical-engineer-anzsco-233911" && (
-           <Head>
-           <title>Aernautical Engineer | Unit Group 2339 | ANZSCO 233911</title>
-           <meta name='description' content='Aernautical Engineer | Unit Group 2339 | ANZSCO 233911'/>
-           <link rel="canonical" href={canonicalUrl} />
-
-           </Head>
-
+        <Head>
+          <title>Aernautical Engineer | Unit Group 2339 | ANZSCO 233911</title>
+          <meta
+            name="description"
+            content="Aernautical Engineer | Unit Group 2339 | ANZSCO 233911"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "agricultural-engineer-anzsco-233912" && (
-         <Head>
-         <title>Agricultural Engineer | Unit Group 2339 | ANZSCO 233912</title>
-         <meta name='description' content='Agricultural Engineer | Unit Group 2339 | ANZSCO 233912'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-        
+        <Head>
+          <title>Agricultural Engineer | Unit Group 2339 | ANZSCO 233912</title>
+          <meta
+            name="description"
+            content="Agricultural Engineer | Unit Group 2339 | ANZSCO 233912"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "biomedical-engineer-anzsco-233913" && (
         <Head>
-        <title>Biomedical Engineer | Unit Group 2339 | ANZSCO 233913</title>
-        <meta name='description' content='Biomedical Engineer | Unit Group 2339 | ANZSCO 233913'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>Biomedical Engineer | Unit Group 2339 | ANZSCO 233913</title>
+          <meta
+            name="description"
+            content="Biomedical Engineer | Unit Group 2339 | ANZSCO 233913"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-       
       )}
 
       {field === "engineering-technologist-anzsco-233914" && (
         <Head>
-        <title>Engineering Technologist | Unit Group 2339 | ANZSCO 233914</title>
-        <meta name='description' content='Engineering Technologist | Unit Group 2339 | ANZSCO 233914'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Engineering Technologist | Unit Group 2339 | ANZSCO 233914
+          </title>
+          <meta
+            name="description"
+            content="Engineering Technologist | Unit Group 2339 | ANZSCO 233914"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-       
       )}
 
       {field === "environmental-engineer-anzsco-233915" && (
         <Head>
-        <title>Environmental Engineer | Unit Group 2339 | ANZSCO 233915</title>
-        <meta name='description' content='Environmental Engineer | Unit Group 2339 | ANZSCO 233915'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Environmental Engineer | Unit Group 2339 | ANZSCO 233915
+          </title>
+          <meta
+            name="description"
+            content="Environmental Engineer | Unit Group 2339 | ANZSCO 233915"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-       
       )}
 
       {field === "engineering-professionals-nec-anzsco-233999" && (
-       
         <Head>
-        <title>Engineering Professionals | Unit Group 2339 | ANZSCO 233999</title>
-        <meta name='description' content='Engineering Professionals | Unit Group 2339 | ANZSCO 233999'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Engineering Professionals | Unit Group 2339 | ANZSCO 233999
+          </title>
+          <meta
+            name="description"
+            content="Engineering Professionals | Unit Group 2339 | ANZSCO 233999"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
       )}
       {field === "computer-networks-and-system-engineers-anzsco-263111" && (
-         <Head>
-         <title>Computer Ntwork and System Engineer | Unit Group 2631 | ANZSCO 263111</title>
-         <meta name='description' content='Computer Ntwork and System Engineer | Unit Group 2631 | ANZSCO 263111'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-      
+        <Head>
+          <title>
+            Computer Ntwork and System Engineer | Unit Group 2631 | ANZSCO
+            263111
+          </title>
+          <meta
+            name="description"
+            content="Computer Ntwork and System Engineer | Unit Group 2631 | ANZSCO 263111"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "telecommunication-engineers-anzsco-263311" && (
-         <Head>
-         <title>Telecommunications Engineer | Unit Group 2633 | ANZSCO 263311</title>
-         <meta name='description' content='Telecommunications Engineer | Unit Group 2633 | ANZSCO 263311'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
+        <Head>
+          <title>
+            Telecommunications Engineer | Unit Group 2633 | ANZSCO 263311
+          </title>
+          <meta
+            name="description"
+            content="Telecommunications Engineer | Unit Group 2633 | ANZSCO 263311"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === " telecommunication-network-engineers-anzsco-263312" && (
         <Head>
-        <title>Telecommunications Network Engineer | Unit Group 2633 | ANZSCO 263312</title>
-        <meta name='description' content='Telecommunications Network Engineer | Unit Group 2633 | ANZSCO 263312'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Telecommunications Network Engineer | Unit Group 2633 | ANZSCO
+            263312
+          </title>
+          <meta
+            name="description"
+            content="Telecommunications Network Engineer | Unit Group 2633 | ANZSCO 263312"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-        
       )}
 
       {field === "civil-engineering-technician-anzsco-312212" && (
         <Head>
-        <title>Civil Engineering Technician | Unit Group 3122 | ANZSCO 312212</title>
-        <meta name='description' content='Civil Engineering Technician | Unit Group 3122 | ANZSCO 312212'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Civil Engineering Technician | Unit Group 3122 | ANZSCO 312212
+          </title>
+          <meta
+            name="description"
+            content="Civil Engineering Technician | Unit Group 3122 | ANZSCO 312212"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-        
       )}
 
       {field === "electrical-engineering-draftsperson-anzsco-312311" && (
-         <Head>
-         <title>Electrical Engineer Draftsperson | Unit Group 3123 | ANZSCO 312311</title>
-         <meta name='description' content='Electrical Engineer Draftsperson | Unit Group 3123 | ANZSCO 312311'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
-       
+        <Head>
+          <title>
+            Electrical Engineer Draftsperson | Unit Group 3123 | ANZSCO 312311
+          </title>
+          <meta
+            name="description"
+            content="Electrical Engineer Draftsperson | Unit Group 3123 | ANZSCO 312311"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "electrical-engineering-technician-anzsco-312312" && (
-      
         <Head>
-         <title>Electrical Engineering Technician | Unit Group 3123 | ANZSCO 312312</title>
-         <meta name='description' content='Electrical Engineering Technician | Unit Group 3123 | ANZSCO 312312'/>
-         <link rel="canonical" href={canonicalUrl} />
-
-         </Head>
+          <title>
+            Electrical Engineering Technician | Unit Group 3123 | ANZSCO 312312
+          </title>
+          <meta
+            name="description"
+            content="Electrical Engineering Technician | Unit Group 3123 | ANZSCO 312312"
+          />
+          <link rel="canonical" href={canonicalUrl} />
+        </Head>
       )}
 
       {field === "civil-engineering-draftsperson-anzsco-312211" && (
         <Head>
-        <title>Civil Engineering Draftsperson | Unit Group 3122 | ANZSCO 312211</title>
-        <meta name='description' content='Civil Engineering Draftsperson | Unit Group 3122 | ANZSCO 312211'/>
-        <link rel="canonical" href={canonicalUrl} />
-
+          <title>
+            Civil Engineering Draftsperson | Unit Group 3122 | ANZSCO 312211
+          </title>
+          <meta
+            name="description"
+            content="Civil Engineering Draftsperson | Unit Group 3122 | ANZSCO 312211"
+          />
+          <link rel="canonical" href={canonicalUrl} />
         </Head>
-       
       )}
       <Hero
         title="Having Trouble Writing your CDR Report?"
