@@ -13,7 +13,7 @@ const BlogCard = ({ item }) => {
             // style={{ width: "100%", height: "100%" }}
           />
         </Ratio>
-        <Ratio aspectRatio={80} className=" shadow-sm ">
+        <Ratio aspectRatio={100} className=" shadow-sm ">
           <div className="card-body ">
             <p
               className="card-text"
