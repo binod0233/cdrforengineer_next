@@ -434,7 +434,7 @@ const Blogs = ({ rdata }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(
     "https://cdrforengineer.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=20&populate=deep"
   );
