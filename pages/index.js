@@ -20,11 +20,11 @@ export default function Home({ landingRes }) {
 
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>CDR For Engineer</title>
         <meta name="description" content="A CDR For Engineer website" />
         <link rel="canonical" href={canonicalUrl} />
-      </Head>
+      </Head> */}
 
       <Seo seo={seo} />
       <Hero
