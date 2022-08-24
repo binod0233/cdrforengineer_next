@@ -48,15 +48,9 @@ export const getStaticProps = async () => {
 
   const landingRes = await landing.json();
 
-  // const test = await fetch(
-  //   "https://cdrskill.herokuapp.com/api/cdrsamples?populate=deep"
-  // );
-  // const testRes = await test.json();
-
   return {
     props: {
       landingRes: landingRes?.data?.attributes || "",
-      // test: testRes,
     },
     revalidate: 1,
   };
