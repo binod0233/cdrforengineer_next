@@ -1,5 +1,6 @@
 import "../styles.css";
 import "bootstrap/dist/css/bootstrap.css";
+
 import { useRef, useEffect } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
@@ -98,6 +99,10 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="google-site-verification"
           content="KceQ_VgcoIBknsBsN-hHU5QZSLifvhWogYHgEZQYtzo"
+        />
+        <link
+          href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          rel="stylesheet"
         />
       </Head>
 

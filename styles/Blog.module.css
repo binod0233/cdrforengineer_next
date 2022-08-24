@@ -1,0 +1,49 @@
+.btn {
+  color: #ded1ed;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn2 {
+  color: #785de4;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+.btn2:focus {
+  box-shadow: none;
+}
+.btn2:hover {
+  color: #785de4;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+.btn:hover {
+  color: #785de4;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+/* .active .btn {
+  color: #07031a;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+} */
+/* .btn:focus {
+  color: #0c6412;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+} */
+.customCard {
+  background-color: #c81f1f;
+  color: #0c6412;
+  padding-left: 10rem;
+}
+.red {
+  background-color: purple;
+  color: rgb(184, 40, 40);
+}

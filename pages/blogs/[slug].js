@@ -6,8 +6,13 @@ import PurpleHeading from "../../components/PurpleHeading";
 import axios from "axios";
 import DesignBubble from "../../components/DesignBubble";
 import BlogCard from "../../components/Blog/BlogCard";
-
-const SpecificBlog = () => {
+import Link from "next/link";
+import parse from "html-react-parser";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+const SpecificBlog = ({ resBlogData }) => {
   const router = useRouter();
   const id = router.query.slug;
   // const [data,setData] = useState(dat)
@@ -15,6 +20,7 @@ const SpecificBlog = () => {
     `https://www.cdrforengineer.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+  // console.log("canonicalUrl", rdata.data[0].attributes.title);
   return (
     <div>
       <Head>
@@ -44,88 +50,135 @@ const SpecificBlog = () => {
       </div>
       <Container>
         {" "}
-        <div className="row pt-3">
-          <div className=" shadow-sm col">
-            <div className="card-body">
-              <p
-                className="card-text"
-                style={{
-                  fontFamily: "Arial",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  fontSize: "15px",
-                  lineHeight: "17px",
-                  color: "#370C64",
-                }}
-              >
-                Australia Migration
-              </p>
-              <p
-                className="card-text"
-                style={{
-                  fontFamily: "Century Gothic",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  fontSize: "20px",
-                  lineHeight: "25px",
-                  color: "#370C64",
-                }}
-              >
-                Best CDR writing services for engineers Australia{" "}
-              </p>
-              <p
-                className="card-text"
-                style={{
-                  fontFamily: "Arial",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  fontSize: "15px",
-                  lineHeight: "17px",
-                  color: "#666666",
-                }}
-              >
-                Competency Demonstration Report (CDR) is an essential document
-                that showcases your engineering skills and Knowledge to meet
-                Australian standards. EA is the central authority that examines
-                the CDR Report of Engineering Applicants.
-              </p>
-              <div
-                className="d-flex justify-content-between align-items-center"
-                style={{
-                  fontFamily: "Arial",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  fontSize: "15px",
-                  lineHeight: "17px",
-                  color: "#370C64",
-                }}
-              >
-                <small className="text-muted">9 mins</small>
+        <div className="	d-none d-sm-block">
+          <Row className="py-4">
+            <img
+              src="https://res.cloudinary.com/copenned/image/upload/v1658463629/BLOgs3_w1rhg4.png"
+              className="order-sm-2 col-md-6"
+            />
+            <div className="order-sm-1 shadow-sm col-md-6 ">
+              <div className="card-body ">
+                <p
+                  className="card-text"
+                  style={{
+                    fontFamily: "Arial",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    fontSize: "15px",
+                    lineHeight: "17px",
+                    color: "#370C64",
+                  }}
+                >
+                  Australia Migration
+                </p>
+                <p
+                  className="card-text random"
+                  style={{
+                    fontFamily: "Century Gothic",
+                    fontStyle: "normal",
+                    fontWeight: "700",
+                    fontSize: "20px",
+                    lineHeight: "25px",
+                  }}
+                >
+                  dddd
+                </p>
+                <p
+                  className="card-text"
+                  style={{
+                    fontFamily: "Arial",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    fontSize: "15px",
+                    lineHeight: "17px",
+                    color: "#666666",
+                  }}
+                >
+                  Competency Demonstration Report (CDR) is an essential document
+                  that showcases your engineering skills and Knowledge to meet
+                  Australian standards. EA is the central authority that
+                  examines the CDR Report of Engineering Applicants.
+                </p>
+                <div
+                  className="d-flex justify-content-between align-items-center"
+                  style={{
+                    fontFamily: "Arial",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    fontSize: "15px",
+                    lineHeight: "17px",
+                    color: "#370C64",
+                  }}
+                >
+                  <small className="text-muted">
+                    {" "}
+                    {/* {moment(item?.attributes?.createdAt).fromNow()} */}
+                  </small>
+                  <Link href="/">
+                    <button
+                      type="button"
+                      className="btn btn-sm shadow-none hide"
+                    >
+                      continue reading
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <img
-            src="https://res.cloudinary.com/copenned/image/upload/v1658463629/BLOgs3_w1rhg4.png"
-            // lalyout="fill"
-            // width={20}
-            // height={20}
-            // src="../../public/images/blog/BLOgs3.png"
-            className="col"
-            style={{ width: "20%", height: "260px" }}
-          />
+          </Row>
         </div>
         <Row className="pt-5">
-          <Col xs={8}></Col>
+          <Col md={8}>
+            {" "}
+            {resBlogData?.attributes?.content &&
+              parse(resBlogData?.attributes?.content).map((item, index) => (
+                <div key={item.key}>
+                  {item.type === "h2" ? (
+                    <div>
+                      <h2
+                        id={item.key}
+                        style={{
+                          fontFamily: "Asap",
+                          fontWeight: "700",
+                          fontSize: "26px",
+                          lineHeight: "29.8px",
+                          color: "#203546",
+                        }}
+                      >
+                        {parse(resBlogData.attributes.content)[item.key]}
+                      </h2>
+                    </div>
+                  ) : (
+                    <>{parse(resBlogData.attributes.content)[item.key]}</>
+                  )}
+                </div>
+              ))}
+          </Col>
           <Col>
             <Stack gap={3}>
-              <div className="bg-light border">
+              <div className="p-1 border">
                 <h3>Table of Content</h3>
-                <p>data 1</p>
-                <p>data 1</p>
-                <p>data 1</p>
-                <p>data 1</p>
-                <p>data 1</p>
-                <p>data 1</p>
+                {resBlogData?.attributes?.content &&
+                  parse(resBlogData?.attributes?.content).map((item, index) => (
+                    <div key={item.key}>
+                      {item.type === "h2" && (
+                        <>
+                          <Link id={item.key} href={`#${item.key}`}>
+                            <a>
+                              <span style={{ color: "#203546" }}>
+                                {
+                                  parse(resBlogData.attributes.content)[
+                                    item.key
+                                  ].props.children
+                                }
+                              </span>
+                            </a>
+                          </Link>
+                          <br />
+                        </>
+                      )}
+                    </div>
+                  ))}
               </div>
               <div
                 style={{
@@ -135,7 +188,7 @@ const SpecificBlog = () => {
               >
                 <Row className="m-0 p-4 " style={{ color: "white" }}>
                   <h5 className="pb-2">
-                    World-class articles, delivered weekly.
+                    World-className articles, delivered weekly.
                   </h5>
                   <Form.Control
                     placeholder="Add your item here..."
@@ -151,57 +204,71 @@ const SpecificBlog = () => {
                 </Row>
               </div>
               <h3>want to share</h3>
-              <div className="d-flex    ">
-                <Button
-                  variant="white"
-                  size="sm"
-                  // className="bg-light"
-                  style={{
-                    backgroundColor: "#EEDDFF",
-                    color: "#461578",
-                  }}
-                  width="10%"
+              <div className="d-flex  flex justify-content-start  ">
+                <a
+                  href="https://www.facebook.com/cdrforengineer001"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none", color: "white" }}
                 >
-                  Share on Facebook
-                </Button>{" "}
-                <div className="px-5">
                   <Button
                     variant="white"
                     size="sm"
-                    // className="bg-light"
                     style={{
-                      backgroundColor: "#EEDDFF",
-                      color: "#461578",
+                      backgroundColor: "#29487D",
+                      color: "white",
                     }}
                   >
-                    Share on Twitter
+                    <FacebookIcon />
+                    Share on Facebook
                   </Button>{" "}
+                </a>
+                <div className="px-1">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <Button
+                      variant="white"
+                      size="sm"
+                      style={{
+                        backgroundColor: "#1DA1F2",
+                        color: "white",
+                      }}
+                      className=""
+                    >
+                      <TwitterIcon />
+                      Share on Twitter
+                    </Button>
+                  </a>
                 </div>
               </div>
-              <div className="d-flex    ">
+              <div className="d-flex  flex justify-content-start  ">
                 <Button
                   variant="white"
                   size="sm"
-                  // className="bg-light"
                   style={{
-                    backgroundColor: "#EEDDFF",
-                    color: "#461578",
+                    backgroundColor: "#C8232C",
+                    color: "white",
                   }}
-                  width="10%"
                 >
-                  Share on Facebook
+                  <PinterestIcon />
+                  Share on Pinterest
                 </Button>{" "}
-                <div className="px-5">
+                <div className="px-1">
                   <Button
                     variant="white"
                     size="sm"
-                    // className="bg-light"
                     style={{
-                      backgroundColor: "#EEDDFF",
-                      color: "#461578",
+                      backgroundColor: "#0E76A8",
+                      color: "white",
                     }}
+                    className=""
                   >
-                    Share on Twitter
+                    <LinkedInIcon />
+                    Share on LinkedIn
                   </Button>{" "}
                 </div>
               </div>
@@ -226,32 +293,30 @@ const SpecificBlog = () => {
               <BlogCard />
               <BlogCard />
               <h2>Our Blog Categories</h2>
-              <div className="d-flex    ">
+              <div className="d-flex  flex justify-content-start  ">
                 <Button
                   variant="white"
                   size="sm"
-                  // className="bg-light"
                   style={{
                     backgroundColor: "#EEDDFF",
                     color: "#461578",
                     borderRadius: "20px",
                   }}
-                  width="10%"
                 >
-                  Success
+                  Australia Migration
                 </Button>{" "}
-                <div className="px-5">
+                <div className="px-1">
                   <Button
                     variant="white"
                     size="sm"
-                    // className="bg-light"
                     style={{
                       backgroundColor: "#EEDDFF",
                       color: "#461578",
                       borderRadius: "20px",
                     }}
+                    className=""
                   >
-                    Success
+                    Skill Assessment
                   </Button>{" "}
                 </div>
               </div>
@@ -266,7 +331,7 @@ const SpecificBlog = () => {
                     borderRadius: "20px",
                   }}
                 >
-                  Success
+                  CDR Service
                 </Button>{" "}
               </div>
               <h2>How Was the Blog</h2>
@@ -277,11 +342,13 @@ const SpecificBlog = () => {
                   <Form.Control type="email" placeholder="Email" />
                 </div>
               </div>
-              <div
-                className="d-flex flex-row justify-content-start "
-                style={{ height: "12rem" }}
-              >
-                <Form.Control type="email" placeholder="Comment" />
+              <div className="form-floating">
+                <textarea
+                  className="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"
+                ></textarea>
+                <label htmlFor="floatingTextarea">Comments</label>
               </div>
               <Button
                 variant="danger"
@@ -340,5 +407,42 @@ const SpecificBlog = () => {
     </div>
   );
 };
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     "https://cdrforengineer.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=3&populate=deep"
+//   );
+//   const resdata = await res.json();
+//   return { props: { rdata: resdata } };
+// }
+
+export async function getStaticPaths() {
+  const blog = await fetch("https://cdrforengineer.herokuapp.com/api/blogs");
+  const allBlogs = await blog.json();
+  return {
+    paths: allBlogs.data.map((blog) => ({
+      params: {
+        slug: blog.attributes.slug,
+      },
+    })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const blog = await fetch(
+    `https://cdrforengineer.herokuapp.com/api/blogs/${params.slug}?populate=deep`
+  );
+  const blogData = await blog.json();
+  const blogs = await fetch(
+    `https://cdrforengineer.herokuapp.com/api/blogs?populate=deep`
+  );
+  const blogDatas = await blogs.json();
+
+  return {
+    props: { resBlogData: blogData?.data, resData: blogDatas?.data },
+
+    revalidate: 1,
+  };
+}
 
 export default SpecificBlog;

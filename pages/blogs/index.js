@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Head from "next/head";
+
 import {
   Container,
   Button,
@@ -15,6 +16,8 @@ import {
   Figure,
 } from "react-bootstrap";
 
+import styles from "../../styles/Blog.module.css";
+
 import {
   useQuery,
   useMutation,
@@ -25,20 +28,24 @@ import {
 import moment from "moment";
 import BlogCard from "../../components/Blog/BlogCard";
 import SearchIcon from "@mui/icons-material/Search";
+import { Check } from "@mui/icons-material";
 
 const getBlogs = async (key) => {
   const keyValue = key.queryKey[1].titleSlug;
   if (keyValue) {
     keyValue === 1 ? keyValue : keyValue * 3;
+    // const res = await fetch(
+    //   `https://cdrforengineer.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=${keyValue}&pagination[limit]=6&populate=deep`
+    // );
     const res = await fetch(
-      `https://cdrskill.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=${keyValue}&pagination[limit]=3&populate=deep`
+      `https://cdrforengineer.herokuapp.com/api/blogs?populate=deep`
     );
     const data = await res.json();
     console.log();
     return data;
   }
   const res = await fetch(
-    "https://cdrskill.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=3&populate=deep"
+    "https://cdrforengineer.herokuapp.com/api/blogs?populate=deep"
   );
   const data = await res.json();
   console.log();
@@ -46,7 +53,7 @@ const getBlogs = async (key) => {
 };
 
 const Blogs = ({ rdata }) => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState("1");
   const [pData, setpData] = useState(1);
   const router = useRouter();
   const canonicalUrl = (
@@ -58,7 +65,7 @@ const Blogs = ({ rdata }) => {
     initialData: rdata,
     keepPreviousData: true,
   });
-  console.log();
+  console.log(checked);
   let active = pData;
   let items = [];
   for (let number = 1; number <= 4; number++) {
@@ -106,31 +113,80 @@ const Blogs = ({ rdata }) => {
       <Container>
         <hr className="bg-white border-2 border-top border-danger" />
         <div className="d-flex bd-highlight mb-3 flex-wrap">
-          <div className="p-2 bd-highlight allblog">
+          <div className="p-2 ">
             <Button
-              style={{
-                color: "#370C64",
-                backgroundColor: "white",
-                border: "none",
-              }}
+              bsPrefix="btn btn2"
+              type="checkbox"
+              value={"1"}
+              className={checked == 1 ? styles.btn2 : styles.btn}
+              onClick={(e) => setChecked(e.currentTarget.value)}
             >
               All Blogs
             </Button>
           </div>
-          <div className="p-2 bd-highlight ">
+          <div className="p-2 ">
             <Button
-              style={{
-                color: "#370C64",
-                backgroundColor: "white",
-                border: "none",
-              }}
+              bsPrefix="btn btn2"
+              type="checkbox"
+              value={"2"}
+              className={checked == 2 ? styles.btn2 : styles.btn}
+              onClick={(e) => setChecked(e.currentTarget.value)}
             >
               Recent Blogs
             </Button>
           </div>
-          <div className="p-2 bd-highlight">Flex item</div>
-          <div className="p-2 bd-highlight">Flex item</div>
-          <div className="p-2 bd-highlight">Flex item</div>
+          <div className="p-2 ">
+            <Button
+              bsPrefix="btn btn2"
+              type="checkbox"
+              value={"3"}
+              className={checked == 3 ? styles.btn2 : styles.btn}
+              onClick={(e) => setChecked(e.currentTarget.value)}
+            >
+              Skill Assessment
+            </Button>
+          </div>
+          <div className="p-2 ">
+            <Button
+              bsPrefix="btn btn2"
+              type="checkbox"
+              value={"4"}
+              className={checked == 4 ? styles.btn2 : styles.btn}
+              onClick={(e) => setChecked(e.currentTarget.value)}
+            >
+              Australia Migration
+            </Button>
+          </div>
+          {/* <div className="p-2 bd-highlight ">
+            <Button variant="customColor" className={styles.customColor}>
+              Recent Blogs
+            </Button>
+          </div>
+          <div className="p-2 bd-highlight">
+            <ToggleButton
+              id="t2"
+              type="checkbox"
+              value={"two"}
+              className={checked == "two" ? styles.btn : styles.btn2}
+              onChange={(e) => setChecked(e.currentTarget.value)}
+              // checked={checked === 2}
+            >
+              All Blogs
+            </ToggleButton>
+          </div>
+          <div className="p-2 bd-highlight">
+            <ToggleButton
+              id="t3"
+              type="checkbox"
+              value="3"
+              className={styles.btn}
+              onChange={(e) => setChecked(e.currentTarget.value)}
+              checked={checked === 3}
+            >
+              All Blogsss
+            </ToggleButton>
+          </div>
+          <div className="p-2 bd-highlight"></div> */}
 
           <div className="ms-auto p-2 bd-highlight">
             <Button
@@ -140,7 +196,7 @@ const Blogs = ({ rdata }) => {
                 backgroundColor: "white",
                 border: "none",
               }}
-              active
+              href="/blogs/searchblogs"
             >
               <SearchIcon style={{ color: "#370C64" }} className="" />
             </Button>
@@ -286,7 +342,7 @@ const Blogs = ({ rdata }) => {
 
       <div className="album py-5 ">
         <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
             {status === "success" &&
               data.data.map((item, index) => {
                 {
@@ -296,12 +352,6 @@ const Blogs = ({ rdata }) => {
                   <>
                     <div key={item.id}>
                       <BlogCard item={item} />
-                      <br />
-
-                      <BlogCard item={item} />
-                      <br />
-
-                      <BlogCard item={item} />
                     </div>
                   </>
                 );
@@ -310,7 +360,7 @@ const Blogs = ({ rdata }) => {
         </div>
       </div>
 
-      <Container className="p-1 mb-5">
+      {/* <Container className="p-1 mb-5">
         <Stack
           direction="horizontal"
           gap={3}
@@ -318,16 +368,16 @@ const Blogs = ({ rdata }) => {
         >
           <div className="position-absolute  top-50 start-50 translate-middle">
             <Pagination style={{ color: "red" }} className="link-hover">
-              <Pagination.Prev
-                className=" mx-5  "
+              <Button
                 onClick={() => setpData(pData - 1)}
                 disabled={pData === 1}
+                style={{}}
               >
-                previous
-              </Pagination.Prev>
+              </Button>
               {items}
               <Pagination.Next
-                className=" mx-5 "
+                variant="link"
+                className={styles.red}
                 onClick={() => setpData(pData + 1)}
                 disabled={pData === 4}
               >
@@ -336,7 +386,7 @@ const Blogs = ({ rdata }) => {
             </Pagination>
           </div>
         </Stack>
-      </Container>
+      </Container> */}
 
       <div
         style={{
@@ -372,7 +422,7 @@ const Blogs = ({ rdata }) => {
                 return (
                   <>
                     <div key={item.id}>
-                      <BlogCard item={item} />
+                      {index < 3 && <BlogCard item={item} />}
                     </div>
                   </>
                 );
@@ -380,15 +430,13 @@ const Blogs = ({ rdata }) => {
           </div>
         </div>
       </div>
-      <p>custom d</p>
-      <style jsx>{``}</style>
     </div>
   );
 };
 
 export async function getServerSideProps() {
   const res = await fetch(
-    "https://cdrskill.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=3&populate=deep"
+    "https://cdrforengineer.herokuapp.com/api/blogs?sort[0]=id&pagination[start]=0&pagination[limit]=20&populate=deep"
   );
   const resdata = await res.json();
   return { props: { rdata: resdata } };

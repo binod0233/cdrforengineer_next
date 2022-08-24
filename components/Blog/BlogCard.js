@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Ratio } from "react-bootstrap";
 import moment from "moment";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";
@@ -6,12 +6,14 @@ import Link from "next/link";
 const BlogCard = ({ item }) => {
   return (
     <>
-      <div className="col card-body-hover">
-        <img
-          src={item?.attributes?.image?.data?.attributes?.url}
-          style={{ width: "100%", height: "40%" }}
-        />
-        <div className=" shadow-sm">
+      <div className="col  card-body-hover ">
+        <Ratio aspectRatio="21x9">
+          <img
+            src={item?.attributes?.image?.data?.attributes?.url}
+            // style={{ width: "100%", height: "100%" }}
+          />
+        </Ratio>
+        <Ratio aspectRatio={80} className=" shadow-sm ">
           <div className="card-body ">
             <p
               className="card-text"
@@ -69,14 +71,14 @@ const BlogCard = ({ item }) => {
                 {" "}
                 {moment(item?.attributes?.createdAt).fromNow()}
               </small>
-              <Link href="/">
+              <Link href={`/blogs/${item?.attributes?.slug}`}>
                 <button type="button" className="btn btn-sm shadow-none hide">
                   continue reading <ArrowForwardIcon />
                 </button>
               </Link>
             </div>
           </div>
-        </div>
+        </Ratio>
       </div>
     </>
   );
