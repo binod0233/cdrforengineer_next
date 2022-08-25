@@ -18,7 +18,8 @@ const FancyTabs = ({ data }) => {
         }}
       >
         {data.map((d, index) => (
-          <div key={index}
+          <div
+            key={index}
             className="p-2 mx-2 tabContainer"
             style={{
               background:

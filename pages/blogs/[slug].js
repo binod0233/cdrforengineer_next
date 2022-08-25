@@ -20,7 +20,7 @@ const SpecificBlog = ({ resBlogData }) => {
     `https://www.cdrforengineer.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
-  // console.log("canonicalUrl", rdata.data[0].attributes.title);
+  console.log("canonicalUrl", resBlogData);
   return (
     <div>
       <Head>
@@ -81,7 +81,7 @@ const SpecificBlog = ({ resBlogData }) => {
                     lineHeight: "25px",
                   }}
                 >
-                  dddd
+                  resBlogData?.attributes?.title
                 </p>
                 <p
                   className="card-text"

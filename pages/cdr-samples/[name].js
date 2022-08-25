@@ -8,7 +8,8 @@ import OurFeatures from "../../components/SpecificSample/OurFeatures";
 import Hero from "../../components/Hero";
 import { useRouter } from "next/router";
 import CheckIcon from "@mui/icons-material/Check";
-
+import parse from "html-react-parser";
+import Seo from "../../components/Seo";
 const SpecificSample = ({ sampleData }) => {
   const router = useRouter();
   const name = router.query.name;
@@ -16,6 +17,8 @@ const SpecificSample = ({ sampleData }) => {
     `https://www.cdrforengineer.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+  const { content, seo, title1, title2, paragraph, steps, fancySteps } =
+    sampleData?.data?.attributes;
 
   const allSamples = {
     engineeringManager: {
@@ -5111,7 +5114,27 @@ to avoid possible rejections."
         </>
       ) : (
         <>
-          <h1>hello</h1>
+          <Seo seo={seo} />
+          <CDRSample
+            title={content?.title}
+            titleDetails={content?.paragraph && parse(content.paragraph)}
+            image={content?.image?.data?.attributes?.url}
+            secondTitle={title1 && title1}
+            secondTitleSecond={title2 && title2}
+            secondTitleSecondDetails={paragraph && parse(paragraph)}
+          />
+          <Steps data={steps} />
+          <ReportSamples data={fancySteps} />
+          <CDRReportAccepted
+            title="We are always here to assist you!
+        Feel free to contact our friendly team of writers with any questions you have.
+        "
+            buttonName="Get and Agent to Consult"
+            daata="We are always here to assist you!
+        Feel free to contact our friendly team of writers with any questions you have.
+        "
+          />
+          <OurFeatures />
         </>
       )}
     </div>

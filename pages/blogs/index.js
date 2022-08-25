@@ -103,7 +103,7 @@ const Blogs = ({ rdata }) => {
         <Container>
           <Stack gap={1} style={{ color: "white" }}>
             <div>
-              <h1 className="my-5 "> CDRforengineer Blogs</h1>
+              <h1 className="my-5 "> CDR forengineer Blogs</h1>
             </div>
             <div className="pb-5">Home/blog</div>
           </Stack>
