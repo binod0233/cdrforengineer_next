@@ -17,8 +17,8 @@ const SpecificSample = ({ sampleData }) => {
     `https://www.cdrforengineer.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
-  const { content, seo, title1, title2, paragraph, steps, fancySteps } =
-    sampleData?.data?.attributes;
+  // const { content, seo, title1, title2, paragraph, steps, fancySteps } =
+  //   sampleData?.data?.attributes;
 
   const allSamples = {
     engineeringManager: {
@@ -4148,7 +4148,7 @@ CDR For Engineers offers free CDR Report samples on various Engineering occupati
     },
   };
   const resSampleData = sampleData?.data;
-  console.log("sameple", sampleData);
+  // console.log("sameple", sampleData);
 
   return (
     <div>
@@ -5114,17 +5114,26 @@ to avoid possible rejections."
         </>
       ) : (
         <>
-          <Seo seo={seo} />
+          <Seo seo={sampleData?.data?.attributes?.seo} />
           <CDRSample
-            title={content?.title}
-            titleDetails={content?.paragraph && parse(content.paragraph)}
-            image={content?.image?.data?.attributes?.url}
-            secondTitle={title1 && title1}
-            secondTitleSecond={title2 && title2}
-            secondTitleSecondDetails={paragraph && parse(paragraph)}
+            title={sampleData?.data?.attributes?.content?.title}
+            titleDetails={
+              sampleData?.data?.attributes?.content?.paragraph &&
+              parse(sampleData.data.attributes.content.paragraph)
+            }
+            image={
+              sampleData?.data?.attributes?.content?.image?.data?.attributes
+                ?.url
+            }
+            secondTitle={sampleData?.data?.attributes?.title1}
+            secondTitleSecond={sampleData?.data?.attributes?.title2}
+            secondTitleSecondDetails={
+              sampleData?.data?.attributes?.paragraph &&
+              parse(sampleData.data.attributes.paragraph)
+            }
           />
-          <Steps data={steps} />
-          <ReportSamples data={fancySteps} />
+          <Steps data={sampleData?.data?.attributes?.steps} />
+          <ReportSamples data={sampleData?.data?.attributes?.fancySteps} />
           <CDRReportAccepted
             title="We are always here to assist you!
         Feel free to contact our friendly team of writers with any questions you have.
@@ -5165,7 +5174,7 @@ export async function getStaticProps({ params }) {
   const sampleData = await sample.json();
 
   return {
-    props: { sampleData },
+    props: { sampleData: sampleData || "" },
     revalidate: 1,
   };
 }
